@@ -4,167 +4,165 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="sass/style.scss">
 </head>
 
 <body>
   <header>
-    <div class="container">
-      <div class="header__wrapper">
-        <div class="header__logo">
-          <img class="header__logo--icon" src="img/logotype-mobile.svg.jpg">
-        </div>
-
-        <nav class="header__nav">
-          <ul class="header__nav--list">
-            <li class="header__nav--item">
-              <a class="menu__item--link" href="#">
-                <span>Главная</span>
-              </a>
-            </li>
-
-            <li class="header__nav--item">
-              <a class="menu__item--link" href="#">
-                <span>Фото и видео</span>
-              </a>
-            </li>
-
-            <li class="header__nav--item">
-              <a class="menu__item--link" href="#">
-                <span>Форма отзыва</span>
-              </a>
-            </li>
-
-            <li class="header__nav--item">
-              <a class="menu__item--link" href="#">
-                <span>HtmlAcademy</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
+    <div class="header__wrapper">
+      <div class="header__logo">
+        <img class="header__logo--icon" src="img/logotype-mobile.svg">
       </div>
+
+      <nav class="header__nav menu">
+        <ul class="menu__list">
+          <li class="menu__item menu__item--current">
+            <a class="menu__link">Главная</a>
+          </li>
+
+          <li class="menu__item">
+            <a class="menu__link" href="catalog.html">Фото и видео</a>
+          </li>
+
+          <li class="menu__item">
+            <a class="menu__link" href="form.html">Форма отзыва</a>
+          </li>
+
+          <li class="menu__item">
+            <a class="menu__link" href="#">HtmlAcademy</a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
 
   <main>
     <div class="sedona__welcome--section">
-      <section class="sedona__welcome--intro">
-        <img class="intro__image" src="img/back-mobile.jpg.jpg">
-        <img class="intro__image--text" src="img/text-index.svg.jpg">
-        <h1 class="intro__text">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</h1>
-        <p class="intro__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <section class="sedona__welcome intro">
+        <div class="intro__image-wrapper">
+          <img class="intro__image" src="img/text-index.svg">
+        </div>
+
+        <div class="intro__content-wrapper">
+          <h1 class="intro__title">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <p class="intro__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
       </section>
     </div>
 
-    <div class="sedona__causes--section">
-      <section class="causes__first">
-        <h1 class="causes__title">Настоящий городок</h1>
-        <p class="causes__number">- №1 -</p>
-        <p class="causes__text">Седона не аттракцион для туристов, там течёт своя жизнь</p>
+    <ul class="sedona__causes--section">
+      <li class="causes">
+        <div class="causes__item">
+          <div class="causes__content-wrapper">
+            <h1 class="causes__title">Настоящий городок</h1>
 
-        <div class="causes__image-wrapper">
-          <img class="city__image" src="img/photo-city@1x 1.jpg">
+            <p class="causes__text">- №1 -</p>
+            <p class="causes__text">Седона не аттракцион для туристов, там течёт своя жизнь</p>
+          </div>
+
+          <img class="causes__image" src="img/photo-city@1x 1.jpg">
         </div>
 
-        <ul class="benefits__list">
-          <li class="benefits__item">
-            <div class="benefits__item--icon">
-              <img class="icon__image" src="img/icon-house.svg.jpg">
-            </div>
+        <div class="causes__item">
+          <div class="causes__content-wrapper">
+            <img class="icon__image" src="img/icon-house.svg">
 
-            <h1 class="benefits__item--title">Жилье</h1>
-            <p class="benefits__item--text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-          </li>
+            <h1 class="causes__title">Жилье</h1>
+            <p class="causes__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </div>
 
-          <li class="benefits__item">
-            <div class="benefits__item--icon">
-              <img class="icon__image" src="img/icon-gift.svg.jpg">
-            </div>
+          <div class="causes__content-wrapper">
+            <img class="icon__image" src="img/icon-gift.svg">
 
-            <h1 class="benefits__item--title">Сувениры</h1>
-            <p class="benefits__item--text">Не только китайского, но и местного производства!</p>
-          </li>
+            <h1 class="causes__title">Сувениры</h1>
+            <p class="causes__text">Не только китайского, но и местного производства!</p>
+          </div>
 
-          <li class="benefits__item">
-            <div class="benefits__item--icon">
-              <img class="icon__image" src="img/icon-burger.svg.jpg">
-            </div>
+          <div class="causes__content-wrapper">
+            <img class="icon__image" src="img/icon-burger.svg">
 
-            <h1 class="benefits__item--title">Еда</h1>
-            <p class="benefits__item--text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-          </li>
-        </ul>
-      </section>
-
-      <section class="causes__second">
-        <h1 class="causes__title">Так есть мост дьявола</h1>
-        <p class="causes__number">- №2 -</p>
-        <p class="causes__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-
-        <div class="causes__image-wrapper">
-          <img class="bridge__image" src="img/photo-bridge@1x 1.jpg">
+            <h1 class="causes__title">Еда</h1>
+            <p class="causes__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </div>
         </div>
-      </section>
+      </li>
 
-      <section class="causes__third">
-        <h1 class="causes__title">Небольшая площадь</h1>
-        <p class="causes__number">- №3 -</p>
-        <p class="causes__text">Все интересные места находятся очень близко</p>
-      </section>
+      <li class="causes">
+        <div class="causes__item">
+          <div class="causes__content-wrapper">
+            <h1 class="causes__title">Так есть мост дьявола</h1>
 
-      <section class="causes__fourth">
-        <h1 class="causes__title">Красивая дорога</h1>
-        <p class="causes__number">- №4 -</p>
-        <p class="causes__text">Ехать в Седону из Лас-Вегаса совсен не скучно!</p>
-      </section>
+            <p class="causes__text">- №2 -</p>
+            <p class="causes__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          </div>
 
-      <section class="causes__fifth">
-        <h1 class="causes__title">Мало туристов</h1>
-        <p class="causes__number">- №5 -</p>
-        <p class="causes__text">Большенство едет в гранд каньон и отлпится там</p>
-      </section>
-    </div>
+          <img class="causes__image" src="img/photo-bridge@1x 1.jpg">
+        </div>
+      </li>
 
-    <div class="sedona__find-hotel--section">
+      <li class="causes">
+        <div class="causes__content-wrapper">
+          <h1 class="causes__title">Небольшая площадь</h1>
+          <p class="causes__text">- №3 -</p>
+          <p class="causes__text">Все интересные места находятся очень близко</p>
+        </div>
+      </li>
+
+      <li class="causes">
+        <div class="causes__content-wrapper">
+          <h1 class="causes__title">Красивая дорога</h1>
+          <p class="causes__text">- №4 -</p>
+          <p class="causes__text">Ехать в Седону из Лас-Вегаса совсен не скучно!</p>
+        </div>
+      </li>
+
+      <li class="causes">
+        <div class="causes__content-wrapper">
+          <h1 class="causes__title">Мало туристов</h1>
+          <p class="causes__text">- №5 -</p>
+          <p class="causes__text">Большенство едет в гранд каньон и отлпится там</p>
+        </div>
+      </li>
+    </ul>
+
+    <section class="sedona__find-hotel">
       <h1 class="find-hotel__title">Заинтересовались?</h1>
-      <p class="find-hotel__text">Укажите предлогаемые даты поездки, и мы покажем вам лучшие предложения гостинец в Седоне</p>
+      <p class="find-hotel__text">Укажите предлогаемые даты поездки, и мы покажем вам лучшие предложения гостинец в
+        Седоне</p>
 
-      <form class="find-hotel__form">
-        <button class="button">Найти гостиницу</button>
-      </form>
+      <a class="find-hotel__button" href="#">Найти гостиницу</a>
 
-      <div class="hotel__map">
-        <section class="map">
-          <img class="map__image" src="img/map-mobile.jpg.jpg">
-        </section>
-      </div>
-    </div>
+      <section class="map">
+        <img class="map__image" src="img/map-mobile.jpg">
+      </section>
+    </section>
   </main>
 
   <footer>
     <div class="container">
       <div class="footer__wrapper">
-        <h1 class="footer__hashtag">#visitsedona</h1>
+        <a class="footer__hashtag" href="#">#visitsedona</a>
 
         <div class="social-network__wrapper">
           <ul class="social-network__list">
-            <li class="social-network__item">
-              <img class="social-network__image" src="img/icon-twitter.svg.jpg">
-            </li>
+            <a class="social-network__item">
+              <img class="social-network__image" src="img/icon-twitter.svg">
+            </a>
 
-            <li class="social-network__item">
-              <img class="social-network__image" src="img/icon-facebook.svg.jpg">
-            </li>
+            <a class="social-network__item">
+              <img class="social-network__image" src="img/icon-facebook.svg">
+            </a>
 
-            <li class="social-network__item">
-              <img class="social-network__image" src="img/icon-youtube.svg.jpg">
-            </li>
+            <a class="social-network__item">
+              <img class="social-network__image" src="img/icon-youtube.svg">
+            </a>
           </ul>
         </div>
 
         <div class="social-network__developed">
           <p class="developed__text">Разработано</p>
           <div class="developed__image-wrapper">
-            <img class="htmlacademy__image" src="img/htmlacademy.svg.jpg">
+            <img class="htmlacademy__image" src="img/htmlacademy-icon.svg">
           </div>
         </div>
       </div>
