@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__wrapper">
+      <div class="header__logo">
+        <img class="header__logo-img" src="img/logotype-mobile.svg">
+      </div>
+
+      <nav class="header__nav menu">
+        <ul class="menu__list">
+          <li class="menu__item menu__item--current">
+            <a class="menu__link">Главная</a>
+          </li>
+
+          <li class="menu__item">
+            <a class="menu__link" href="catalog.html">Фото и видео</a>
+          </li>
+
+          <li class="menu__item">
+            <a class="menu__link" href="form.html">Форма отзыва</a>
+          </li>
+
+          <li class="menu__item">
+            <a class="menu__link" href="#">HtmlAcademy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="sedona-catalog">
+      <h1 class="visually-hidden">Фото и видео в Седоне</h1>
+      <div class="sedona-catalog__image-wrapper">
+        <img class="sedona-catalog__image" src="img/SEDONA.svg">
+      </div>
+
+      <div class="sedona-catalog__content">
+        <p class="sedona-catalog__title">Фото и видео</p>
+        <p class="sedona-catalog__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+          политике и экономике.</p>
+      </div>
+    </section>
+
+    <section class="places">
+      <h2 class="visually-hidden">Лист фотографий</h2>
+      <ul class="places__list">
+        <li class="places__item-container">
+          <div class="places__item">
+            <div class="places__image-wrapper">
+              <img class="places__image" alt="Неродные просторы" src="img/photo-1-mobile.jpg">
+            </div>
+
+            <div class="places__content-wrapper">
+              <p class="places__title">Неродные просторы</p>
+              <p class="places__text">Автор фото: Борис</p>
+            </div>
+
+            <div class="places__like-wrapper">
+              <div class="places__image-wrapper">
+                <img class="places__like-icon" src="img/like-icon.svg">
+              </div>
+              <p class="places__like-count">1350</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="places__item-container">
+          <div class="places__item">
+            <div class="places__image-wrapper">
+              <img class="places__image" src="img/photo-2-mobile.jpg">
+            </div>
+
+            <div class="places__content-wrapper">
+              <p class="places__title">Местная ростительность</p>
+              <p class="places__text">Автор фото: Сергей</p>
+            </div>
+
+            <div class="places__like-wrapper">
+              <div class="places__image-wrapper">
+                <img class="places__like-icon" src="img/like-icon.svg">
+              </div>
+              <p class="places__like-count">143</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="places__item-container">
+          <div class="places__item">
+            <div class="places__image-wrapper">
+              <img class="places__image" alt="Дорога на север" src="img/photo-3-mobile.jpg">
+            </div>
+
+            <div class="places__content-wrapper">
+              <p class="places__title">Дорога на север</p>
+              <p class="places__text">Автор фото: Петр</p>
+            </div>
+
+            <div class="places__like">
+              <div class="places__image-wrapper">
+                <img class="places__like-icon" src="img/like-icon.svg">
+              </div>
+              <p class="places__like-count">96</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="places__item-container">
+          <div class="places__item">
+            <div class="places__image-wrapper">
+              <img class="places__image" alt="Мост Дьявола" src="img/photo-4-desktop 1.jpg">
+            </div>
+
+            <div class="places__content-wrapper">
+              <p class="places__title">Мост Дьявола</p>
+              <p class="places__text">Автор фото: Антон</p>
+            </div>
+
+            <div class="places__like-wrapper">
+              <div class="places__image-wrapper">
+                <img class="places__like-icon" src="img/like-icon.svg">
+              </div>
+              <p class="places__like-count">254</p>
+            </div>
+          </div>
+        </li>
+
+        <li class="places__item-container">
+          <div class="places__item">
+            <div class="places__content-wrapper">
+              <p class="places__title">Все еще сомневаетесь?</p>
+              <p class="places__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
+                раз!</p>
+            </div>
+
+            <div class="places__image-wrapper">
+              <img class="places__image" src="img/video-mobile.jpg">
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <a class="footer__hashtag" href="#">#visitsedona</a>
+
+    <ul class="footer__social social">
+      <li class="social__item">
+        <a class="social__link">
+          <img class="social__icon" src="img/icon-twitter.svg">
+        </a>
+      </li>
+
+      <li class="social__item">
+        <a class="social__link">
+          <img class="social__icon" src="img/icon-facebook.svg">
+        </a>
+      </li>
+
+      <li class="social__item">
+        <a class="social__link">
+          <img class="social__icon" src="img/icon-youtube.svg">
+        </a>
+      </li>
+    </ul>
+
+    <div class="footer__developed">
+      <p class="footer__developed-text">Разработано</p>
+      <a class="footer__developed-link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="footer__developed-logo" src="img/htmlacademy-icon.svg">
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
