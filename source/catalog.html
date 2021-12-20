@@ -9,18 +9,18 @@
 <body>
   <header class="header">
     <div class="header__wrapper">
-      <div class="header__logo">
+      <a class="header__logo" href="#">
         <img class="header__logo-img" src="img/logotype-mobile.svg">
-      </div>
+      </a>
 
       <nav class="header__nav menu">
         <ul class="menu__list">
-          <li class="menu__item menu__item--current">
-            <a class="menu__link">Главная</a>
+          <li class="menu__item">
+            <a class="menu__link" href="index.html">Главная</a>
           </li>
 
           <li class="menu__item">
-            <a class="menu__link" href="catalog.html">Фото и видео</a>
+            <a class="menu__link menu__item--current">Фото и видео</a>
           </li>
 
           <li class="menu__item">
@@ -36,15 +36,14 @@
   </header>
 
   <main>
-    <section class="sedona-catalog">
-      <h1 class="visually-hidden">Фото и видео в Седоне</h1>
-      <div class="sedona-catalog__image-wrapper">
-        <img class="sedona-catalog__image" src="img/SEDONA.svg">
+    <section class="sedona-welcome">
+      <div class="sedona-welcome__image-wrapper sedona-welcome__image-wrapper--page">
+        <img class="sedona-welcome__image" src="img/sedona.svg">
       </div>
 
-      <div class="sedona-catalog__content">
-        <p class="sedona-catalog__title">Фото и видео</p>
-        <p class="sedona-catalog__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+      <div class="sedona-welcome__content">
+        <h1 class="sedona-welcome__title">Фото и видео</h1>
+        <p class="sedona-welcome__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
           политике и экономике.</p>
       </div>
     </section>
@@ -53,99 +52,85 @@
       <h2 class="visually-hidden">Лист фотографий</h2>
       <ul class="places__list">
         <li class="places__item-container">
-          <div class="places__item">
-            <div class="places__image-wrapper">
-              <img class="places__image" alt="Неродные просторы" src="img/photo-1-mobile.jpg">
-            </div>
+          <div class="places__image-wrapper">
+            <img class="places__image" alt="Неродные просторы" src="img/photo-1-mobile.jpg">
+          </div>
 
-            <div class="places__content-wrapper">
-              <p class="places__title">Неродные просторы</p>
+          <div class="places__description">
+            <div class="places__title-container">
+              <h3 class="places__title">Неродные просторы</h3>
               <p class="places__text">Автор фото: Борис</p>
             </div>
-
-            <div class="places__like-wrapper">
-              <div class="places__image-wrapper">
-                <img class="places__like-icon" src="img/like-icon.svg">
-              </div>
-              <p class="places__like-count">1350</p>
-            </div>
+            <button class="places__like-count" type="button">1350</button>
           </div>
         </li>
 
         <li class="places__item-container">
-          <div class="places__item">
-            <div class="places__image-wrapper">
-              <img class="places__image" src="img/photo-2-mobile.jpg">
-            </div>
+          <div class="places__image-wrapper">
+            <img class="places__image" src="img/photo-2-mobile.jpg">
+          </div>
 
-            <div class="places__content-wrapper">
-              <p class="places__title">Местная ростительность</p>
+          <div class="places__description">
+            <div class="places__title-container">
+              <h3 class="places__title">Местная ростительность</h3>
               <p class="places__text">Автор фото: Сергей</p>
             </div>
-
-            <div class="places__like-wrapper">
-              <div class="places__image-wrapper">
-                <img class="places__like-icon" src="img/like-icon.svg">
-              </div>
-              <p class="places__like-count">143</p>
-            </div>
+            <button class="places__like-count" type="button">143</button>
           </div>
         </li>
 
         <li class="places__item-container">
-          <div class="places__item">
-            <div class="places__image-wrapper">
-              <img class="places__image" alt="Дорога на север" src="img/photo-3-mobile.jpg">
-            </div>
+          <div class="places__image-wrapper">
+            <img class="places__image" alt="Дорога на север" src="img/photo-3-mobile.jpg">
+          </div>
 
-            <div class="places__content-wrapper">
-              <p class="places__title">Дорога на север</p>
+          <div class="places__description">
+            <div class="places__title-container">
+              <h3 class="places__title">Дорога на север</h3>
               <p class="places__text">Автор фото: Петр</p>
             </div>
-
-            <div class="places__like">
-              <div class="places__image-wrapper">
-                <img class="places__like-icon" src="img/like-icon.svg">
-              </div>
-              <p class="places__like-count">96</p>
-            </div>
+            <button class="places__like-count" type="button">96</button>
           </div>
         </li>
 
         <li class="places__item-container">
-          <div class="places__item">
-            <div class="places__image-wrapper">
-              <img class="places__image" alt="Мост Дьявола" src="img/photo-4-desktop 1.jpg">
-            </div>
+          <div class="places__image-wrapper">
+            <img class="places__image" alt="Мост Дьявола" src="img/photo-4-desktop.jpg">
+          </div>
 
-            <div class="places__content-wrapper">
-              <p class="places__title">Мост Дьявола</p>
+          <div class="places__description">
+            <div class="places__title-container">
+              <h3 class="places__title">Мост Дьявола</h3>
               <p class="places__text">Автор фото: Антон</p>
             </div>
-
-            <div class="places__like-wrapper">
-              <div class="places__image-wrapper">
-                <img class="places__like-icon" src="img/like-icon.svg">
-              </div>
-              <p class="places__like-count">254</p>
-            </div>
-          </div>
-        </li>
-
-        <li class="places__item-container">
-          <div class="places__item">
-            <div class="places__content-wrapper">
-              <p class="places__title">Все еще сомневаетесь?</p>
-              <p class="places__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
-                раз!</p>
-            </div>
-
-            <div class="places__image-wrapper">
-              <img class="places__image" src="img/video-mobile.jpg">
-            </div>
+            <button class="places__like-count" type="button">254</button>
           </div>
         </li>
       </ul>
+    </section>
+
+    <section class="sedona-video">
+      <div class="sedona-video__content-wrapper">
+        <p class="sedona-video__title">Все еще сомневаетесь?</p>
+        <p class="sedona-video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
+          раз!</p>
+      </div>
+
+      <div class="sedona-video__video-wrapper">
+        <img class="sedona-video__video" src="img/video-mobile.jpg">
+        <div class="sedona-video__control-video controller">
+          <div class="controller__slider slider">
+            <div class="slider__volume-scale"></div>
+            <div class="slider__volume-slider"></div>
+          </div>
+          
+          <div class="controller__buttons button-settings">
+            <div class="button-settings__replay"></div>
+            <div class="button-settings__subtitles"></div>
+            <div class="button-settings__fullscreen"></div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 

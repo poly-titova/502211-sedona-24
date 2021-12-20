@@ -9,14 +9,14 @@
 <body>
   <header class="header">
     <div class="header__wrapper">
-      <div class="header__logo">
+      <a class="header__logo" href="#">
         <img class="header__logo-img" src="img/logotype-mobile.svg">
-      </div>
+      </a>
 
       <nav class="header__nav menu">
         <ul class="menu__list">
-          <li class="menu__item menu__item--current">
-            <a class="menu__link">Главная</a>
+          <li class="menu__item">
+            <a class="menu__link" href="index.html">Главная</a>
           </li>
 
           <li class="menu__item">
@@ -24,7 +24,7 @@
           </li>
 
           <li class="menu__item">
-            <a class="menu__link" href="form.html">Форма отзыва</a>
+            <a class="menu__link menu__item--current">Форма отзыва</a>
           </li>
 
           <li class="menu__item">
@@ -36,109 +36,112 @@
   </header>
 
   <main>
-    <section class="sedona-review">
-      <h1 class="visually-hidden">Отправьте отзыв</h1>
-      <div class="sedona-review__image-wrapper">
-        <img class="sedona-review__image" src="img/SEDONA.svg">
+    <section class="sedona-welcome">
+      <div class="sedona-welcome__image-wrapper sedona-welcome__image-wrapper--page">
+        <img class="sedona-welcome__image" src="img/sedona.svg">
       </div>
 
-      <div class="sedona-review__content">
-        <p class="sedona-review__title">Отправьте свой отзыв</p>
-        <p class="sedona-review__text">Помогите нашим отелям стать лучше! Отправьте отзыв о них, а также о посещенных
+      <div class="sedona-welcome__content">
+        <h1 class="sedona-welcome__title">Отправьте свой отзыв</h1>
+        <p class="sedona-welcome__text">Помогите нашим отелям стать лучше! Отправьте отзыв о них, а также о посещенных
           вами достопримечательностях</p>
       </div>
     </section>
 
     <section class="review">
       <h2 class="visually-hidden">Форма отправки отзыва</h2>
-      <form class="review__item" action="https://echo.htmlacademy.ru" method="post">
-        <ul class="review__form form">
-          <li class="form__item-container">
-            <div class="form__item">
-              <p class="form__title">Представтесь:</p>
-              <div class="form__content-wrapper">
-                <label class="form__title">Имя*:</label>
-                <input class="form__input" type="text" name="form__name" placeholder="Петр">
-              </div>
+      <form class="review__item form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="form__item-container">
+          <div class="form__item">
+            <p class="form__title">Представтесь:</p>
+            <ul class="form__list">
+              <li class="form__content-wrapper">
+                <label class="form__title" for="form__name">Имя<span class="required">*</span>:</label>
+                <input class="form__input" type="text" id="form__name" placeholder="Петр">
+              </li>
 
-              <div class="form__content-wrapper">
-                <label class="form__title">Фамилия*:</label>
-                <input class="form__input" type="text" name="form__surname" placeholder="Иванов">
-              </div>
+              <li class="form__content-wrapper">
+                <label class="form__title" for="form__surname">Фамилия<span class="required">*</span>:</label>
+                <input class="form__input" type="text" id="form__surname" placeholder="Иванов">
+              </li>
 
-              <div class="form__content-wrapper">
-                <label class="form__title">Отчество:</label>
-                <input class="form__input" type="text" name="form__patronymic" placeholder="Александрович">
-              </div>
-            </div>
-          </li>
+              <li class="form__content-wrapper">
+                <label class="form__title" for="form__patronymic">Отчество:</label>
+                <input class="form__input" type="text" id="form__patronymic" placeholder="Александрович">
+              </li>
+            </ul>
+          </div>
+        </fieldset>
 
-          <li class="form__item-container">
-            <div class="form__item">
-              <p class="form__title">Контактная информация:</p>
-              <div class="form__content-wrapper">
-                <label class="form__title">Контактный номер*:</label>
-                <input class="form__input" type="text" name="form__contact" placeholder="Введите телефон">
-                <img class="form__icon" src="img/phone.svg">
-              </div>
+        <fieldset class="form__item-container">
+          <div class="form__item">
+            <p class="form__title">Контактная информация:</p>
+            <ul class="form__list">
+              <li class="form__content-wrapper">
+                <label class="form__title" for="form__contact">Контактный номер<span class="required">*</span>:</label>
+                <input class="form__input" type="text" id="form__contact" placeholder="Введите телефон">
+              </li>
 
-              <div class="form__content-wrapper">
-                <label class="form__title">Электронная почта*:</label>
-                <input class="form__input" type="text" name="form__email" placeholder="Введите e-mail">
-                <img class="form__icon" src="img/mail.svg">
-              </div>
-            </div>
-          </li>
+              <li class="form__content-wrapper">
+                <label class="form__title" for="form__email">Электронная почта<span class="required">*</span>:</label>
+                <input class="form__input" type="text" id="form__email" placeholder="Введите e-mail">
+              </li>
+            </ul>
+          </div>
+        </fieldset>
 
-          <li class="form__item-container">
-            <p class="form__title">Ваше общее впечатление:</p>
-            <div class="form__content-wrapper">
-              <input class="form__input" type="radio" name="form__positive" checked>
-              <label class="form__title">Скорее положительное</label>
-            </div>
+        <fieldset class="form__item-container">
+          <p class="form__title">Ваше общее впечатление:</p>
+          <ul class="form__list">
+            <li class="form__content-wrapper">
+              <input class="form__input" type="radio" id="form__positive" checked>
+              <label class="form__title" for="form__positive">Скорее положительное</label>
+            </li>
 
-            <div class="form__content-wrapper">
-              <input class="form__input" type="radio" name="form__negatively">
-              <label class="form__title">Скорее отрицательное</label>
-            </div>
+            <li class="form__content-wrapper">
+              <input class="form__input" type="radio" id="form__negatively">
+              <label class="form__title" for="form__negatively">Скорее отрицательное</label>
+            </li>
 
-            <div class="form__content-wrapper">
-              <input class="form__input" type="radio" name="form__difficulty">
-              <label class="form__title">Затрудняюсь ответить</label>
-            </div>
-          </li>
+            <li class="form__content-wrapper">
+              <input class="form__input" type="radio" id="form__difficulty">
+              <label class="form__title" for="form__difficulty">Затрудняюсь ответить</label>
+            </li>
+          </ul>
+        </fieldset>
 
-          <li class="form__item-container">
-            <p class="form__title">Посещенные достопримечательности:</p>
-            <div class="form__content-wrapper">
-              <input class="form__input" type="checkbox" name="form__bridge" checked>
-              <label class="form__title">Мост Дьявола</label>
-            </div>
+        <fieldset class="form__item-container">
+          <p class="form__title">Посещенные достопримечательности:</p>
+          <ul class="form__list">
+            <li class="form__content-wrapper">
+              <input class="form__input" type="checkbox" id="form__bridge" checked>
+              <label class="form__title" for="form__bridge">Мост Дьявола</label>
+            </li>
 
-            <div class="form__content-wrapper">
-              <input class="form__input" type="checkbox" name="form__mountain" checked>
-              <label class="form__title">Гора-Колокол</label>
-            </div>
+            <li class="form__content-wrapper">
+              <input class="form__input" type="checkbox" id="form__mountain" checked>
+              <label class="form__title" for="form__mountain">Гора-Колокол</label>
+            </li>
 
-            <div class="form__content-wrapper">
-              <input class="form__input" type="checkbox" name="form__park" checked>
-              <label class="form__title">Слайд-парк</label>
-            </div>
+            <li class="form__content-wrapper">
+              <input class="form__input" type="checkbox" id="form__park" checked>
+              <label class="form__title" for="form__park">Слайд-парк</label>
+            </li>
 
-            <div class="form__content-wrapper">
-              <input class="form__input" type="checkbox" name="form__rocks">
-              <label class="form__title">Красные скалы</label>
-            </div>
-          </li>
+            <li class="form__content-wrapper">
+              <input class="form__input" type="checkbox" id="form__rocks">
+              <label class="form__title" for="form__rocks">Красные скалы</label>
+            </li>
+          </ul>
+        </fieldset>
 
-          <li class="form__item-container">
-            <p class="form__title">Опишите свои эмоции:</p>
-            <div class="form__content-wrapper">
-              <input class="form__input" type="text" name="form__text" placeholder="Опишите подробно все свои восторги">
-            </div>
-            <button class="form__submit button" type="submit">Отправить отзыв</button>
-          </li>
-        </ul>
+        <fieldset class="form__item-container">
+          <p class="form__title">Опишите свои эмоции:</p>
+          <div class="form__content-wrapper">
+            <textarea class="form__input" type="text" name="form__text">Опишите подробно все свои восторги</textarea>
+          </div>
+          <button class="form__submit button" type="submit">Отправить отзыв</button>
+        </fieldset>
       </form>
     </section>
   </main>
