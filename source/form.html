@@ -9,7 +9,7 @@
 <body>
   <header class="header">
     <div class="header__wrapper">
-      <a class="header__logo" href="#">
+      <a class="header__logo" href="index.html">
         <img class="header__logo-img" src="img/logotype-mobile.svg">
       </a>
 
@@ -23,8 +23,8 @@
             <a class="menu__link" href="catalog.html">Фото и видео</a>
           </li>
 
-          <li class="menu__item">
-            <a class="menu__link menu__item--current">Форма отзыва</a>
+          <li class="menu__item  menu__item--current">
+            <a class="menu__link">Форма отзыва</a>
           </li>
 
           <li class="menu__item">
@@ -56,12 +56,12 @@
             <p class="form__title">Представтесь:</p>
             <ul class="form__list">
               <li class="form__content-wrapper">
-                <label class="form__title" for="form__name">Имя<span class="required">*</span>:</label>
+                <label class="form__title" for="form__name">Имя<sup class="required">*</sup>:</label>
                 <input class="form__input" type="text" id="form__name" placeholder="Петр">
               </li>
 
               <li class="form__content-wrapper">
-                <label class="form__title" for="form__surname">Фамилия<span class="required">*</span>:</label>
+                <label class="form__title" for="form__surname">Фамилия<sup class="required">*</sup>:</label>
                 <input class="form__input" type="text" id="form__surname" placeholder="Иванов">
               </li>
 
@@ -78,13 +78,17 @@
             <p class="form__title">Контактная информация:</p>
             <ul class="form__list">
               <li class="form__content-wrapper">
-                <label class="form__title" for="form__contact">Контактный номер<span class="required">*</span>:</label>
-                <input class="form__input" type="text" id="form__contact" placeholder="Введите телефон">
+                <label class="form__title" for="form__contact">Контактный номер<sup>*</sup>:</label>
+                <div class="form__content-icon form__content-icon--tel">
+                  <input class="form__input" type="text" id="form__contact" placeholder="Введите телефон">
+                </div>
               </li>
 
               <li class="form__content-wrapper">
-                <label class="form__title" for="form__email">Электронная почта<span class="required">*</span>:</label>
-                <input class="form__input" type="text" id="form__email" placeholder="Введите e-mail">
+                <label class="form__title" for="form__contact">Электронная почта<sup>*</sup>:</label>
+                <div class="form__content-icon form__content-icon--tel">
+                  <input class="form__input" type="text" id="form__email" placeholder="Введите e-mail">
+                </div>
               </li>
             </ul>
           </div>
@@ -137,11 +141,10 @@
 
         <fieldset class="form__item-container">
           <p class="form__title">Опишите свои эмоции:</p>
-          <div class="form__content-wrapper">
-            <textarea class="form__input" type="text" name="form__text">Опишите подробно все свои восторги</textarea>
-          </div>
-          <button class="form__submit button" type="submit">Отправить отзыв</button>
+          <textarea class="form__input" type="text" name="form__text">Опишите подробно все свои восторги</textarea>
         </fieldset>
+
+        <button class="form__submit button" type="submit">Отправить отзыв</button>
       </form>
     </section>
   </main>
