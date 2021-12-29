@@ -1,0 +1,17 @@
+.social {
+  list-style-type: none;
+  
+  margin: 0;
+  padding: 0;
+
+  .social__item {
+    width: 46px;
+    height: 48px;
+
+    background-color: #81b3d2;
+  }
+
+  .social__link {
+    display: block;
+  }
+}

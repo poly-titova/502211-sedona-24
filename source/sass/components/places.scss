@@ -1,0 +1,15 @@
+.places {
+  .places__list {
+    list-style-type: none;
+
+    .places__item-container {
+      .places__description {
+        .places__title-container {
+          .places__title {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

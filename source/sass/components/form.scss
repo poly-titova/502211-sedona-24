@@ -1,0 +1,33 @@
+.form {
+  .form__item-container {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    border: none;
+
+    .form__list li {
+      list-style-type: none;
+    }
+
+    .form__title {
+      font-size: 18px;
+    }
+
+    .form__label {
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+    .form__label-radio {
+      font-weight: 700;
+      font-size: 18px;
+      text-transform: capitalize;
+    }
+
+    .form__label-checkbox {
+      font-weight: 700;
+      font-size: 18px;
+      text-transform: capitalize;
+    }
+  }
+}

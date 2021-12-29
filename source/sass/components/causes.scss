@@ -1,0 +1,122 @@
+.causes {
+  .causes__list {
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+
+    .causes__item {
+      .causes__content-wrapper--blue {
+        background: #81b3d2;
+        color: #ffffff;
+
+        margin: 0 18px;
+
+        .causes__title {
+          font-size: 18px;
+
+          margin: 0;
+          padding: 0;
+        }
+
+        .causes__text {
+          margin: 0;
+          padding: 0;
+        }
+      }
+
+      .causes__content-wrapper--grey {
+        background: #eeeeee;
+
+        .causes__title {
+          font-size: 18px;
+
+          margin: 0;
+          padding: 0;
+        }
+
+        .causes__text {
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+
+    .causes__more {
+      list-style-type: none;
+      background-color: #ffffff;
+
+      margin: 0;
+      padding: 0;
+
+      .causes__content-wrapper--housing {
+        font-size: 18px;
+        line-height: 26px;
+
+        margin: 0 21px;
+        padding-left: 48px;
+
+        .causes__title {
+          text-align: left;
+          font-size: 18px;
+
+          margin: 0;
+          padding: 0;
+        }
+
+        .causes__text {
+          text-align: left;
+
+          margin: 0;
+          padding: 0;
+        }
+      }
+
+      .causes__content-wrapper--souvenirs {
+        font-size: 18px;
+        line-height: 26px;
+
+        margin: 0 21px;
+        padding-left: 48px;
+
+        .causes__title {
+          text-align: left;
+          font-size: 18px;
+
+          margin: 0;
+          padding: 0;
+        }
+
+        .causes__text {
+          text-align: left;
+
+          margin: 0;
+          padding: 0;
+        }
+      }
+
+      .causes__content-wrapper--food {
+        font-size: 18px;
+        line-height: 26px;
+
+        margin: 0 21px;
+        padding-left: 48px;
+
+        .causes__title {
+          font-size: 18px;
+          text-align: left;
+
+          margin: 0;
+          padding: 0;
+        }
+
+        .causes__text {
+          text-align: left;
+          
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+  }
+}

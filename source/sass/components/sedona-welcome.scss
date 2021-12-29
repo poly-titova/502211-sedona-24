@@ -1,0 +1,21 @@
+.sedona-welcome {
+  padding: 90px 0 85px 0;
+
+  .sedona-welcome__image-wrapper {
+    background-image: url(../img/back-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .sedona-welcome__image {
+      margin: 0 auto;
+    }
+  }
+
+  .sedona-welcome__content {
+    background-color: #ffffff;
+
+    .sedona-welcome__title {
+      font-size: 18px;
+    }
+  }
+}

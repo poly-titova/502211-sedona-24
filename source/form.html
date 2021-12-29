@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -38,7 +39,7 @@
   <main>
     <section class="sedona-welcome">
       <div class="sedona-welcome__image-wrapper sedona-welcome__image-wrapper--page">
-        <img class="sedona-welcome__image" src="img/sedona.svg">
+        <img class="sedona-welcome__image" src="img/sedona-welcome.svg">
       </div>
 
       <div class="sedona-welcome__content">
@@ -52,98 +53,95 @@
       <h2 class="visually-hidden">Форма отправки отзыва</h2>
       <form class="review__item form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="form__item-container">
-          <div class="form__item">
-            <p class="form__title">Представтесь:</p>
-            <ul class="form__list">
-              <li class="form__content-wrapper">
-                <label class="form__title" for="form__name">Имя<sup class="required">*</sup>:</label>
-                <input class="form__input" type="text" id="form__name" placeholder="Петр">
-              </li>
+          <h2 class="form__title">Представтесь:</h2>
+          <ul class="form__list">
+            <li class="form__content-wrapper">
+              <label class="form__label" for="form__name">Имя<sup class="required">*</sup>:</label>
+              <input class="form__input" type="text" id="form__name" placeholder="Петр">
+            </li>
 
-              <li class="form__content-wrapper">
-                <label class="form__title" for="form__surname">Фамилия<sup class="required">*</sup>:</label>
-                <input class="form__input" type="text" id="form__surname" placeholder="Иванов">
-              </li>
+            <li class="form__content-wrapper">
+              <label class="form__label" for="form__surname">Фамилия<sup class="required">*</sup>:</label>
+              <input class="form__input" type="text" id="form__surname" placeholder="Иванов">
+            </li>
 
-              <li class="form__content-wrapper">
-                <label class="form__title" for="form__patronymic">Отчество:</label>
-                <input class="form__input" type="text" id="form__patronymic" placeholder="Александрович">
-              </li>
-            </ul>
-          </div>
+            <li class="form__content-wrapper">
+              <label class="form__label" for="form__patronymic">Отчество:</label>
+              <input class="form__input" type="text" id="form__patronymic" placeholder="Александрович">
+            </li>
+          </ul>
         </fieldset>
 
         <fieldset class="form__item-container">
-          <div class="form__item">
-            <p class="form__title">Контактная информация:</p>
-            <ul class="form__list">
-              <li class="form__content-wrapper">
-                <label class="form__title" for="form__contact">Контактный номер<sup>*</sup>:</label>
-                <div class="form__content-icon form__content-icon--tel">
-                  <input class="form__input" type="text" id="form__contact" placeholder="Введите телефон">
-                </div>
-              </li>
+          <h2 class="form__title">Контактная информация:</h2>
+          <ul class="form__list">
+            <li class="form__content-wrapper">
+              <label class="form__label" for="form__contact">Контактный номер<sup>*</sup>:</label>
+              <div class="form__content-icon form__content-icon--tel">
+                <input class="form__input" type="text" id="form__contact" placeholder="Введите телефон">
+              </div>
+            </li>
 
-              <li class="form__content-wrapper">
-                <label class="form__title" for="form__contact">Электронная почта<sup>*</sup>:</label>
-                <div class="form__content-icon form__content-icon--tel">
-                  <input class="form__input" type="text" id="form__email" placeholder="Введите e-mail">
-                </div>
-              </li>
-            </ul>
-          </div>
+            <li class="form__content-wrapper">
+              <label class="form__label" for="form__contact">Электронная почта<sup>*</sup>:</label>
+              <div class="form__content-icon form__content-icon--tel">
+                <input class="form__input" type="text" id="form__email" placeholder="Введите e-mail">
+              </div>
+            </li>
+          </ul>
         </fieldset>
 
         <fieldset class="form__item-container">
-          <p class="form__title">Ваше общее впечатление:</p>
+          <h2 class="form__title">Ваше общее впечатление:</h2>
           <ul class="form__list">
             <li class="form__content-wrapper">
               <input class="form__input" type="radio" id="form__positive" checked>
-              <label class="form__title" for="form__positive">Скорее положительное</label>
+              <label class="form__label-radio" for="form__positive">Скорее положительное</label>
             </li>
 
             <li class="form__content-wrapper">
               <input class="form__input" type="radio" id="form__negatively">
-              <label class="form__title" for="form__negatively">Скорее отрицательное</label>
+              <label class="form__label-radio" for="form__negatively">Скорее отрицательное</label>
             </li>
 
             <li class="form__content-wrapper">
               <input class="form__input" type="radio" id="form__difficulty">
-              <label class="form__title" for="form__difficulty">Затрудняюсь ответить</label>
+              <label class="form__label-radio" for="form__difficulty">Затрудняюсь ответить</label>
             </li>
           </ul>
         </fieldset>
 
         <fieldset class="form__item-container">
-          <p class="form__title">Посещенные достопримечательности:</p>
+          <h2 class="form__title">Посещенные достопримечательности:</h2>
           <ul class="form__list">
             <li class="form__content-wrapper">
               <input class="form__input" type="checkbox" id="form__bridge" checked>
-              <label class="form__title" for="form__bridge">Мост Дьявола</label>
+              <label class="form__label-checkbox" for="form__bridge">Мост Дьявола</label>
             </li>
 
             <li class="form__content-wrapper">
               <input class="form__input" type="checkbox" id="form__mountain" checked>
-              <label class="form__title" for="form__mountain">Гора-Колокол</label>
+              <label class="form__label-checkbox" for="form__mountain">Гора-Колокол</label>
             </li>
 
             <li class="form__content-wrapper">
               <input class="form__input" type="checkbox" id="form__park" checked>
-              <label class="form__title" for="form__park">Слайд-парк</label>
+              <label class="form__label-checkbox" for="form__park">Слайд-парк</label>
             </li>
 
             <li class="form__content-wrapper">
               <input class="form__input" type="checkbox" id="form__rocks">
-              <label class="form__title" for="form__rocks">Красные скалы</label>
+              <label class="form__label-checkbox" for="form__rocks">Красные скалы</label>
             </li>
           </ul>
         </fieldset>
 
         <fieldset class="form__item-container">
-          <p class="form__title">Опишите свои эмоции:</p>
+          <h2 class="form__title">Опишите свои эмоции:</h2>
           <textarea class="form__input" type="text" name="form__text">Опишите подробно все свои восторги</textarea>
         </fieldset>
 
+        <p class="form__text">* - обязательные поля</p>
         <button class="form__submit button" type="submit">Отправить отзыв</button>
       </form>
     </section>

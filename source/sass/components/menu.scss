@@ -1,0 +1,19 @@
+.menu {
+  .menu__list {
+    list-style-type: none;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu__item a {
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 40px;
+    text-decoration: none;
+
+    color: #ffffff;
+    background-color: #81B3D2;
+  }
+}
