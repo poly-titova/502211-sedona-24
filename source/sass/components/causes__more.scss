@@ -1,0 +1,29 @@
+.causes__more {
+  background-color: #ffffff;
+  list-style-type: none;
+
+  margin: 0;
+  padding: 0;
+
+  .causes__content-wrapper {
+    font-size: 18px;
+    line-height: 26px;
+
+    padding-left: 48px;
+
+    .causes__title {
+      text-align: left;
+      font-size: 18px;
+
+      margin: 0;
+      padding: 0;
+    }
+
+    .causes__text {
+      text-align: left;
+
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

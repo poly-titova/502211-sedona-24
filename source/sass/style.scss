@@ -45,7 +45,7 @@ body {
 }
 
 body {
-  max-width: 767px;
+  min-width: 320px;
 }
 
 img {
@@ -61,7 +61,7 @@ img {
 
   margin: -1px;
   padding: 0;
-  
+
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;

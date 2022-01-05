@@ -1,15 +1,19 @@
-.places {
-  .places__list {
-    list-style-type: none;
+.places__list {
+  list-style-type: none;
 
-    .places__item-container {
-      .places__description {
-        .places__title-container {
-          .places__title {
-            font-size: 18px;
-          }
-        }
-      }
-    }
-  }
+  padding: 0;
+}
+
+.places__item-container {
+  display: block;
+  margin-top: 22px;
+}
+
+.places__title {
+  font-size: 18px;
+}
+
+.places__like-count {
+  border: none;
+  background-image: url(../../img/like-icon.svg);
 }

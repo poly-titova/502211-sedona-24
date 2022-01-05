@@ -1,33 +1,118 @@
-.form {
-  .form__item-container {
+.form__item-container {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  border: none;
+}
+
+.form__list {
+  padding: 0;
+
+  li {
+    list-style-type: none;
+  }
+
+  input {
+    height: 58px;
+    width: auto;
+
+    margin: 10px 20px 10px 10px;
+
+    background-color: #f2f2f2;
+    border: none;
+  }
+
+  input::placeholder {
+    font-style: normal;
+    font-weight: bold;
     font-size: 18px;
     line-height: 26px;
-    font-weight: 700;
-    border: none;
 
-    .form__list li {
-      list-style-type: none;
-    }
+    padding: 18px 22px 14px;
 
-    .form__title {
-      font-size: 18px;
-    }
-
-    .form__label {
-      font-weight: 400;
-      font-size: 14px;
-    }
-
-    .form__label-radio {
-      font-weight: 700;
-      font-size: 18px;
-      text-transform: capitalize;
-    }
-
-    .form__label-checkbox {
-      font-weight: 700;
-      font-size: 18px;
-      text-transform: capitalize;
-    }
+    color: #000000;
   }
+}
+
+.form__content-icon {
+  display: flex;
+  width: 100%;
+  margin: 7px 0;
+
+  .form__input {
+    width: 100%;
+    outline: none;
+    margin: 0 auto;
+  }
+}
+
+.form__icon {
+  background: #e6e6e6;
+  text-align: center;
+  width: 68px;
+
+  &--tel {
+    padding-top: 20px;
+  }
+
+  &--email {
+    padding-top: 16px;
+  }
+}
+
+.form__title {
+  font-size: 18px;
+}
+
+.form__label {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.form__label-radio {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: none;
+}
+
+.form__label-checkbox {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: none;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+
+  padding: 13px 23px 29px 21px;
+}
+
+.form__submit {
+  display: block;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+
+  padding: 19px 32px 14px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+
+  color: #ffffff;
+  background-color: #81b3d2;
 }

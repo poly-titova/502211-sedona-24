@@ -1,30 +1,24 @@
 .search {
-  margin: 0 20px;
+  margin: 33px 0 49px;
+}
 
-  .search__title {
-    font-size: 18px;
+.search__title {
+  font-size: 18px;
+}
 
-    margin: 0;
-    padding: 0;
-  }
+.search__button {
+  display: block;
+  font-family: inherit;
+  font-size: 21px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  border: none;
 
-  .search__text {
-    margin: 0;
-    padding: 0;
-  }
+  padding: 15px 32px 18px;
+  margin: 0 auto;
 
-  .search__button {
-    font-family: inherit;
-    font-size: 21px;
-    text-transform: uppercase;
-    text-align: center;
-    cursor: pointer;
-    border: none;
-
-    padding: 0;
-    margin: 0;
-
-    color: #ffffff;
-    background-color: #81b3d2;
-  }
+  color: #ffffff;
+  background-color: #81b3d2;
 }

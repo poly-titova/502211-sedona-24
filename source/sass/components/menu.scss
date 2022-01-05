@@ -6,6 +6,11 @@
     padding: 0;
   }
 
+  .menu__link {
+    display: block;
+    margin: 0 auto;
+  }
+
   .menu__item a {
     display: block;
     font-weight: 700;
@@ -13,7 +18,9 @@
     line-height: 40px;
     text-decoration: none;
 
+    padding: 5px 0 10px;
+
     color: #ffffff;
-    background-color: #81B3D2;
+    background-color: #81b3d2;
   }
 }
