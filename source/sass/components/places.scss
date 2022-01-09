@@ -1,12 +1,5 @@
-.places__list {
-  list-style-type: none;
-
-  padding: 0;
-}
-
 .places__item-container {
   display: block;
-  margin-top: 22px;
 }
 
 .places__title {
@@ -14,6 +7,18 @@
 }
 
 .places__like-count {
+  min-height: 21px;
+  padding: 10px 0 3px 25px;
+
+  background-color: transparent;
+  background-image: url("../img/like-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  background-size: 23px 21px;
   border: none;
-  background-image: url(../../img/like-icon.svg);
+}
+
+.places__image-wrapper img {
+  display: block;
+  width: 100%;
 }

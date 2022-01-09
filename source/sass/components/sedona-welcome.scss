@@ -1,11 +1,13 @@
 .sedona-welcome__image-wrapper {
-  background-image: url(../img/back-mobile.jpg);
+  padding: 90px 0 77px;
+
+  background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .sedona-welcome__image {
-  padding: 90px;
   margin: 0 auto;
 }
 

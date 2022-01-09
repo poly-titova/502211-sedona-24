@@ -1,26 +1,17 @@
-.menu {
-  .menu__list {
-    list-style-type: none;
+.menu__item {
+  padding: 5px 0 10px;
 
-    margin: 0;
-    padding: 0;
-  }
+  text-align: center;
 
-  .menu__link {
-    display: block;
-    margin: 0 auto;
-  }
+  background-color: $blue;
+}
 
-  .menu__item a {
-    display: block;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 40px;
-    text-decoration: none;
+.menu__link {
+  display: inline-block;
 
-    padding: 5px 0 10px;
-
-    color: #ffffff;
-    background-color: #81b3d2;
-  }
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  color: #ffffff;
+  text-decoration: none;
 }

@@ -1,5 +1,5 @@
 .search {
-  margin: 33px 0 49px;
+  padding: 33px 20px 49px;
 }
 
 .search__title {
@@ -7,18 +7,5 @@
 }
 
 .search__button {
-  display: block;
-  font-family: inherit;
-  font-size: 21px;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  cursor: pointer;
-  border: none;
-
-  padding: 15px 32px 18px;
-  margin: 0 auto;
-
-  color: #ffffff;
-  background-color: #81b3d2;
+  font-weight: 700;
 }

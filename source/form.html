@@ -12,11 +12,11 @@
   <header class="header">
     <div class="header__wrapper">
       <a class="header__logo" href="index.html">
-        <img class="header__logo-img" src="img/logotype-mobile.svg">
+        <img src="img/logotype-mobile.svg" alt="Логотип Sedona" width="102" height="84">
       </a>
 
       <nav class="header__nav menu">
-        <ul class="menu__list">
+        <ul class="menu__list list-reset">
           <li class="menu__item">
             <a class="menu__link" href="index.html">Главная</a>
           </li>
@@ -40,7 +40,7 @@
   <main>
     <section class="sedona-welcome">
       <div class="sedona-welcome__image-wrapper sedona-welcome__image-wrapper--page">
-        <img class="sedona-welcome__image" src="img/sedona-welcome.svg">
+        <img class="sedona-welcome__image" src="img/sedona-welcome.svg" alt="Седона" width="229px" height="39px">
       </div>
 
       <div class="sedona-welcome__content">
@@ -55,7 +55,7 @@
       <form class="review__item form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="form__item-container">
           <h2 class="form__title">Представтесь:</h2>
-          <ul class="form__list">
+          <ul class="form__list list-reset">
             <li class="form__content-wrapper">
               <label class="form__label" for="form__name">Имя<sup class="required">*</sup>:</label>
               <input class="form__input" type="text" id="form__name" placeholder="Петр">
@@ -73,16 +73,16 @@
           </ul>
         </fieldset>
 
-        <fieldset class="form__item-container">
+        <fieldset class="form__item-container form__item-container--contacts">
           <h2 class="form__title">Контактная информация:</h2>
-          <ul class="form__list">
+          <ul class="form__list list-reset">
             <li class="form__content-wrapper">
               <label class="form__label" for="form__contact">Контактный номер<sup>*</sup>:</label>
               <div class="form__content-icon form__content-icon--tel">
                 <input class="form__input" type="text" id="form__contact" placeholder="Введите телефон">
-                <i class="form__icon form__icon--tel">
-                  <img src="img/phone.svg">
-                </i>
+                <span class="form__icon form__icon--tel">
+                  <img src="img/phone.svg" alt="Иконка телефона">
+                </span>
               </div>
             </li>
 
@@ -90,9 +90,9 @@
               <label class="form__label" for="form__contact">Электронная почта<sup>*</sup>:</label>
               <div class="form__content-icon form__content-icon--email">
                 <input class="form__input" type="text" id="form__email" placeholder="Введите e-mail">
-                <i class="form__icon form__icon--email">
-                  <img src="img/mail.svg">
-                </i>
+                <span class="form__icon form__icon--email">
+                  <img src="img/mail.svg" alt="Иконка почты">
+                </span>
               </div>
             </li>
           </ul>
@@ -100,19 +100,22 @@
 
         <fieldset class="form__item-container">
           <h2 class="form__title">Ваше общее впечатление:</h2>
-          <ul class="form__list">
+          <ul class="form__list list-reset">
             <li class="form__content-wrapper">
-              <input class="form__input" type="radio" id="form__positive" checked>
+              <input class="form__input-radio" type="radio" id="form__positive" checked>
+              <span class="form__radio"></span>
               <label class="form__label-radio" for="form__positive">Скорее положительное</label>
             </li>
 
             <li class="form__content-wrapper">
-              <input class="form__input" type="radio" id="form__negatively">
+              <input class="form__input-radio" type="radio" id="form__negatively">
+              <span class="form__radio"></span>
               <label class="form__label-radio" for="form__negatively">Скорее отрицательное</label>
             </li>
 
             <li class="form__content-wrapper">
-              <input class="form__input" type="radio" id="form__difficulty">
+              <input class="form__input-radio" type="radio" id="form__difficulty">
+              <span class="form__radio"></span>
               <label class="form__label-radio" for="form__difficulty">Затрудняюсь ответить</label>
             </li>
           </ul>
@@ -120,24 +123,28 @@
 
         <fieldset class="form__item-container">
           <h2 class="form__title">Посещенные достопримечательности:</h2>
-          <ul class="form__list">
+          <ul class="form__list list-reset">
             <li class="form__content-wrapper">
-              <input class="form__input" type="checkbox" id="form__bridge" checked>
+              <input class="form__input-checkbox" type="checkbox" id="form__bridge" checked>
+              <span class="form__checkbox"></span>
               <label class="form__label-checkbox" for="form__bridge">Мост Дьявола</label>
             </li>
 
             <li class="form__content-wrapper">
-              <input class="form__input" type="checkbox" id="form__mountain" checked>
+              <input class="form__input-checkbox" type="checkbox" id="form__mountain" checked>
+              <span class="form__checkbox"></span>
               <label class="form__label-checkbox" for="form__mountain">Гора-Колокол</label>
             </li>
 
             <li class="form__content-wrapper">
-              <input class="form__input" type="checkbox" id="form__park" checked>
+              <input class="form__input-checkbox" type="checkbox" id="form__park" checked>
+              <span class="form__checkbox"></span>
               <label class="form__label-checkbox" for="form__park">Слайд-парк</label>
             </li>
 
             <li class="form__content-wrapper">
-              <input class="form__input" type="checkbox" id="form__rocks">
+              <input class="form__input-checkbox" type="checkbox" id="form__rocks">
+              <span class="form__checkbox"></span>
               <label class="form__label-checkbox" for="form__rocks">Красные скалы</label>
             </li>
           </ul>
@@ -145,10 +152,11 @@
 
         <fieldset class="form__item-container">
           <h2 class="form__title">Опишите свои эмоции:</h2>
-          <textarea class="form__input" type="text" name="form__text">Опишите подробно все свои восторги</textarea>
+          <textarea class="form__input-detail" type="text"
+            name="form__text">Опишите подробно все свои восторги</textarea>
         </fieldset>
 
-        <p class="form__text">* - обязательные поля</p>
+        <p class="form__text"><sup>*</sup> - обязательные поля</p>
         <button class="form__submit button" type="submit">Отправить отзыв</button>
       </form>
     </section>
@@ -157,22 +165,22 @@
   <footer class="footer container">
     <a class="footer__hashtag" href="#">#visitsedona</a>
 
-    <ul class="footer__social social">
+    <ul class="footer__social social list-reset">
       <li class="social__item">
-        <a class="social__link">
-          <img class="social__icon--twitter" src="img/icon-twitter.svg">
+        <a class="social__link social__link--twitter">
+          <img src="img/icon-twitter.svg" alt="Twitter">
         </a>
       </li>
 
       <li class="social__item">
-        <a class="social__link">
-          <img class="social__icon--facebook" src="img/icon-facebook.svg">
+        <a class="social__link social__link--facebook">
+          <img src="img/icon-facebook.svg" alt="Facebook">
         </a>
       </li>
 
       <li class="social__item">
-        <a class="social__link">
-          <img class="social__icon--youtube" src="img/icon-youtube.svg">
+        <a class="social__link social__link--youtube">
+          <img src="img/icon-youtube.svg" alt="Youtube">
         </a>
       </li>
     </ul>
@@ -180,7 +188,7 @@
     <div class="footer__developed">
       <p class="footer__developed-text">Разработано</p>
       <a class="footer__developed-link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="footer__developed-logo" src="img/htmlacademy-icon.svg">
+        <img src="img/htmlacademy-icon.svg" alt="Логотип HtmlAcademy">
       </a>
     </div>
   </footer>
