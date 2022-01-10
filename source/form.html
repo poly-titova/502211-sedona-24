@@ -40,7 +40,7 @@
   <main>
     <section class="sedona-welcome">
       <div class="sedona-welcome__image-wrapper sedona-welcome__image-wrapper--page">
-        <img class="sedona-welcome__image" src="img/sedona-welcome.svg" alt="Седона" width="229px" height="39px">
+        <img class="sedona-welcome__image" src="img/sedona-welcome.svg" alt="Седона" width="229" height="39">
       </div>
 
       <div class="sedona-welcome__content">
@@ -57,12 +57,12 @@
           <h2 class="form__title">Представтесь:</h2>
           <ul class="form__list list-reset">
             <li class="form__content-wrapper">
-              <label class="form__label" for="form__name">Имя<sup class="required">*</sup>:</label>
+              <label class="form__label" for="form__name">Имя<sup>*</sup>:</label>
               <input class="form__input" type="text" id="form__name" placeholder="Петр">
             </li>
 
             <li class="form__content-wrapper">
-              <label class="form__label" for="form__surname">Фамилия<sup class="required">*</sup>:</label>
+              <label class="form__label" for="form__surname">Фамилия<sup>*</sup>:</label>
               <input class="form__input" type="text" id="form__surname" placeholder="Иванов">
             </li>
 
@@ -81,7 +81,7 @@
               <div class="form__content-icon form__content-icon--tel">
                 <input class="form__input" type="text" id="form__contact" placeholder="Введите телефон">
                 <span class="form__icon form__icon--tel">
-                  <img src="img/phone.svg" alt="Иконка телефона">
+                  <img src="img/phone.svg" alt="Иконка телефона" width="18" height="18">
                 </span>
               </div>
             </li>
@@ -91,7 +91,7 @@
               <div class="form__content-icon form__content-icon--email">
                 <input class="form__input" type="text" id="form__email" placeholder="Введите e-mail">
                 <span class="form__icon form__icon--email">
-                  <img src="img/mail.svg" alt="Иконка почты">
+                  <img src="img/mail.svg" alt="Иконка почты" width="16" height="12">
                 </span>
               </div>
             </li>
@@ -102,21 +102,28 @@
           <h2 class="form__title">Ваше общее впечатление:</h2>
           <ul class="form__list list-reset">
             <li class="form__content-wrapper">
-              <input class="form__input-radio" type="radio" id="form__positive" checked>
-              <span class="form__radio"></span>
-              <label class="form__label-radio" for="form__positive">Скорее положительное</label>
+              <label class="form__label-radio">
+                <input class="form__input-radio visually-hidden" type="radio" id="form__positive" name="impression"
+                  checked>
+                <span class="form__radio"></span>
+                <span class="form__label-text">Скорее положительное</span>
+              </label>
             </li>
 
             <li class="form__content-wrapper">
-              <input class="form__input-radio" type="radio" id="form__negatively">
-              <span class="form__radio"></span>
-              <label class="form__label-radio" for="form__negatively">Скорее отрицательное</label>
+              <label class="form__label-radio">
+                <input class="form__input-radio visually-hidden" type="radio" id="form__negatively" name="impression">
+                <span class="form__radio"></span>
+                <span class="form__label-text">Скорее отрицательное</span>
+              </label>
             </li>
 
             <li class="form__content-wrapper">
-              <input class="form__input-radio" type="radio" id="form__difficulty">
-              <span class="form__radio"></span>
-              <label class="form__label-radio" for="form__difficulty">Затрудняюсь ответить</label>
+              <label class="form__label-radio">
+                <input class="form__input-radio visually-hidden" type="radio" id="form__difficulty" name="impression">
+                <span class="form__radio"></span>
+                <span class="form__label-text">Затрудняюсь ответить</span>
+              </label>
             </li>
           </ul>
         </fieldset>
@@ -125,35 +132,45 @@
           <h2 class="form__title">Посещенные достопримечательности:</h2>
           <ul class="form__list list-reset">
             <li class="form__content-wrapper">
-              <input class="form__input-checkbox" type="checkbox" id="form__bridge" checked>
-              <span class="form__checkbox"></span>
-              <label class="form__label-checkbox" for="form__bridge">Мост Дьявола</label>
+              <label class="form__label-checkbox">
+                <input class="form__input-checkbox visually-hidden" type="checkbox" id="form__bridge" name="attraction"
+                  checked>
+                <span class="form__checkbox"></span>
+                <span class="form__label-text">Мост Дьявола</span>
+              </label>
             </li>
 
             <li class="form__content-wrapper">
-              <input class="form__input-checkbox" type="checkbox" id="form__mountain" checked>
-              <span class="form__checkbox"></span>
-              <label class="form__label-checkbox" for="form__mountain">Гора-Колокол</label>
+              <label class="form__label-checkbox">
+                <input class="form__input-checkbox visually-hidden" type="checkbox" id="form__mountain"
+                  name="attraction" checked>
+                <span class="form__checkbox"></span>
+                <span class="form__label-text">Гора-Колокол</span>
+              </label>
             </li>
 
             <li class="form__content-wrapper">
-              <input class="form__input-checkbox" type="checkbox" id="form__park" checked>
-              <span class="form__checkbox"></span>
-              <label class="form__label-checkbox" for="form__park">Слайд-парк</label>
+              <label class="form__label-checkbox">
+                <input class="form__input-checkbox visually-hidden" type="checkbox" id="form__park" name="attraction"
+                  checked>
+                <span class="form__checkbox"></span>
+                <span class="form__label-text">Слайд-парк</span>
+              </label>
             </li>
 
             <li class="form__content-wrapper">
-              <input class="form__input-checkbox" type="checkbox" id="form__rocks">
-              <span class="form__checkbox"></span>
-              <label class="form__label-checkbox" for="form__rocks">Красные скалы</label>
+              <label class="form__label-checkbox">
+                <input class="form__input-checkbox visually-hidden" type="checkbox" id="form__rocks" name="attraction">
+                <span class="form__checkbox"></span>
+                <span class="form__label-text">Красные скалы</span>
+              </label>
             </li>
           </ul>
         </fieldset>
 
         <fieldset class="form__item-container">
           <h2 class="form__title">Опишите свои эмоции:</h2>
-          <textarea class="form__input-detail" type="text"
-            name="form__text">Опишите подробно все свои восторги</textarea>
+          <textarea class="form__input-detail" name="message" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
 
         <p class="form__text"><sup>*</sup> - обязательные поля</p>
@@ -168,19 +185,19 @@
     <ul class="footer__social social list-reset">
       <li class="social__item">
         <a class="social__link social__link--twitter">
-          <img src="img/icon-twitter.svg" alt="Twitter">
+          <img src="img/icon-twitter.svg" alt="Twitter" width="17,5" height="14,57">
         </a>
       </li>
 
       <li class="social__item">
         <a class="social__link social__link--facebook">
-          <img src="img/icon-facebook.svg" alt="Facebook">
+          <img src="img/icon-facebook.svg" alt="Facebook" width="8,7" height="18,9">
         </a>
       </li>
 
       <li class="social__item">
         <a class="social__link social__link--youtube">
-          <img src="img/icon-youtube.svg" alt="Youtube">
+          <img src="img/icon-youtube.svg" alt="Youtube" width="19,91" height="14">
         </a>
       </li>
     </ul>
@@ -188,7 +205,7 @@
     <div class="footer__developed">
       <p class="footer__developed-text">Разработано</p>
       <a class="footer__developed-link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img src="img/htmlacademy-icon.svg" alt="Логотип HtmlAcademy">
+        <img src="img/htmlacademy-icon.svg" alt="Логотип HtmlAcademy" width="26,9" height="34,1">
       </a>
     </div>
   </footer>
