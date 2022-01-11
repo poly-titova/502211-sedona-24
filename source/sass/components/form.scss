@@ -73,6 +73,8 @@
   font-size: 18px;
 }
 
+// Label
+
 .form__label {
   display: flex;
   align-items: center;
@@ -80,22 +82,13 @@
   font-size: 14px;
 }
 
-.form__label-radio {
+.form__label-text {
+  position: relative;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
   text-transform: none;
-}
-
-.form__label-checkbox {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: none;
-
-  padding-left: 80px;
 }
 
 .form__label-detail {
@@ -109,6 +102,17 @@
   line-height: 26px;
 }
 
+// Radio
+
+.form__label-radio {
+  display: block;
+  position: relative;
+  height: 48px;
+
+  padding-top: 11px;
+  padding-left: 75px;
+}
+
 .form__input-radio {
   position: absolute;
   width: 1px;
@@ -119,29 +123,45 @@
 
 .form__radio {
   position: absolute;
-  width: 48px;
-  height: 48px;
+  width: 46px;
+  height: 46px;
+  top: 0;
+  left: 0;
 
-  padding-top: 17px;
-  padding-left: 24px;
-
-  background-image: url("../../img/radio-off.svg");
+  border-radius: 100%;
+  border: 5px solid #f2f2f2;
+  box-shadow: 0 0 0 1px #f2f2f2;
+  background-color: #F2F2F2;
 }
 
 .form__input-radio:checked + .form__radio {
-  background-image: url("../../img/radio-on.svg");
+  background-image: url("../img/radio-on.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .form__input-radio:focus + .form__radio {
-  background-image: url("../../img/radio-off-focus.svg");
+  border: 5px solid #E5E5E5;
+  box-shadow: 0 0 0 1px #E5E5E5;
+  background-color: #E5E5E5;
 }
 
 .form__input-radio:checked:focus + .form__radio {
-  background-image: url("../../img/radio-on-focus.svg");
+  background-color: #E5E5E5;
+  background-image: url("../img/radio-on-focus.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+// Checkbox
+
+.form__label-checkbox {
+  display: block;
+  position: relative;
+  height: 46px;
+
+  padding-top: 11px;
+  padding-left: 75px;
 }
 
 .form__input-checkbox {
@@ -154,31 +174,37 @@
 
 .form__checkbox {
   position: absolute;
-  width: 48px;
-  height: 48px;
+  width: 46px;
+  height: 46px;
+  top: 0;
+  left: 0;
 
-  padding-top: 17px;
-  padding-left: 24px;
-
-  background-image: url("../../img/checkbox-off.svg");
+  border-radius: 5px;
+  border: 5px solid #f2f2f2;
+  box-shadow: 0 0 0 1px #f2f2f2;
+  background-color: #F2F2F2;
 }
 
 .form__input-checkbox:checked + .form__checkbox {
-  background-image: url("../../img/checkbox-on.svg");
+  background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .form__input-checkbox:focus + .form__checkbox {
-  background-image: url("../../img/checkbox-off-focus.svg");
+  border: 5px solid #E5E5E5;
+  box-shadow: 0 0 0 1px #E5E5E5;
+  background-color: #E5E5E5;
 }
 
 .form__input-checkbox:checked:focus + .form__checkbox {
-  background-image: url("../../img/checkbox-on-focus.svg");
+  background-color: #E5E5E5;
+  background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
+// Submit
 .form__submit {
   margin-bottom: 48px;
   padding: 19px 32px 14px;

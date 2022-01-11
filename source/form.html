@@ -133,8 +133,8 @@
           <ul class="form__list list-reset">
             <li class="form__content-wrapper">
               <label class="form__label-checkbox">
-                <input class="form__input-checkbox visually-hidden" type="checkbox" id="form__bridge" name="attraction"
-                  checked>
+                <input class="form__input-checkbox visually-hidden" type="checkbox" id="form__bridge"
+                  name="attraction-bridge" checked>
                 <span class="form__checkbox"></span>
                 <span class="form__label-text">Мост Дьявола</span>
               </label>
@@ -143,7 +143,7 @@
             <li class="form__content-wrapper">
               <label class="form__label-checkbox">
                 <input class="form__input-checkbox visually-hidden" type="checkbox" id="form__mountain"
-                  name="attraction" checked>
+                  name="attraction-mountain" checked>
                 <span class="form__checkbox"></span>
                 <span class="form__label-text">Гора-Колокол</span>
               </label>
@@ -151,8 +151,8 @@
 
             <li class="form__content-wrapper">
               <label class="form__label-checkbox">
-                <input class="form__input-checkbox visually-hidden" type="checkbox" id="form__park" name="attraction"
-                  checked>
+                <input class="form__input-checkbox visually-hidden" type="checkbox" id="form__park"
+                  name="attraction-park" checked>
                 <span class="form__checkbox"></span>
                 <span class="form__label-text">Слайд-парк</span>
               </label>
@@ -160,7 +160,8 @@
 
             <li class="form__content-wrapper">
               <label class="form__label-checkbox">
-                <input class="form__input-checkbox visually-hidden" type="checkbox" id="form__rocks" name="attraction">
+                <input class="form__input-checkbox visually-hidden" type="checkbox" id="form__rocks"
+                  name="attraction-rocks">
                 <span class="form__checkbox"></span>
                 <span class="form__label-text">Красные скалы</span>
               </label>
@@ -170,11 +171,14 @@
 
         <fieldset class="form__item-container">
           <h2 class="form__title">Опишите свои эмоции:</h2>
-          <textarea class="form__input-detail" name="message" placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea class="form__input-detail" name="message"
+            placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
 
-        <p class="form__text"><sup>*</sup> - обязательные поля</p>
-        <button class="form__submit button" type="submit">Отправить отзыв</button>
+        <fieldset class="form__item-container">
+          <p class="form__text"><sup>*</sup> - обязательные поля</p>
+          <button class="form__submit button" type="submit">Отправить отзыв</button>
+        </fieldset>
       </form>
     </section>
   </main>
@@ -185,19 +189,19 @@
     <ul class="footer__social social list-reset">
       <li class="social__item">
         <a class="social__link social__link--twitter">
-          <img src="img/icon-twitter.svg" alt="Twitter" width="17,5" height="14,57">
+          <img src="img/icon-twitter.svg" alt="Twitter" width="18" height="15">
         </a>
       </li>
 
       <li class="social__item">
         <a class="social__link social__link--facebook">
-          <img src="img/icon-facebook.svg" alt="Facebook" width="8,7" height="18,9">
+          <img src="img/icon-facebook.svg" alt="Facebook" width="9" height="19">
         </a>
       </li>
 
       <li class="social__item">
         <a class="social__link social__link--youtube">
-          <img src="img/icon-youtube.svg" alt="Youtube" width="19,91" height="14">
+          <img src="img/icon-youtube.svg" alt="Youtube" width="20" height="14">
         </a>
       </li>
     </ul>
@@ -205,7 +209,7 @@
     <div class="footer__developed">
       <p class="footer__developed-text">Разработано</p>
       <a class="footer__developed-link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img src="img/htmlacademy-icon.svg" alt="Логотип HtmlAcademy" width="26,9" height="34,1">
+        <img src="img/htmlacademy-icon.svg" alt="Логотип HtmlAcademy" width="27" height="34">
       </a>
     </div>
   </footer>
