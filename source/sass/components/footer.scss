@@ -1,0 +1,27 @@
+.footer {
+  width: 100%;
+}
+
+.footer__hashtag {
+  display: block;
+  margin-top: 29px;
+
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer__developed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.footer__developed-link {
+  display: block;
+}

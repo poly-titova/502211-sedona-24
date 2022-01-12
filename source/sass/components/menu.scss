@@ -1,0 +1,17 @@
+.menu__item {
+  padding: 5px 0 10px;
+
+  text-align: center;
+
+  background-color: $blue;
+}
+
+.menu__link {
+  display: inline-block;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  color: #ffffff;
+  text-decoration: none;
+}

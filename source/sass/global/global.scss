@@ -1,0 +1,38 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+
+  background-color: #e7e5e5;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  font-size: 14px;
+  line-height: 26px;
+  font-family: $font-family-main;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+
+  object-fit: cover;
+  object-position: center;
+}

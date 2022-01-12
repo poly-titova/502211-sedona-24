@@ -1,0 +1,32 @@
+.causes__title {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.causes__content-wrapper {
+  &--blue {
+    padding: 55px 0 39px;
+
+    color: #ffffff;
+
+    background: $blue;
+  }
+
+  &--grey {
+    padding: 26px 0 24px;
+
+    background: $grey;
+  }
+}
+
+.causes__more .causes__content-wrapper {
+  padding-left: 48px;
+}
+
+.causes__more .causes__title {
+  text-align: left;
+}
+
+.causes__more .causes__text {
+  text-align: left;
+}

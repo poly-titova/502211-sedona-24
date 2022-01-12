@@ -3,19 +3,20 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/style.scss">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="header">
     <div class="header__wrapper">
-      <a class="header__logo" href="index.html">
-        <img class="header__logo-img" src="img/logotype-mobile.svg">
+      <a class="header__logo">
+        <img src="img/logotype-mobile.svg" alt="Логотип Sedona" width="102" height="84">
       </a>
 
       <nav class="header__nav menu">
-        <ul class="menu__list">
+        <ul class="menu__list list-reset">
           <li class="menu__item menu__item--current">
             <a class="menu__link">Главная</a>
           </li>
@@ -38,9 +39,10 @@
 
   <main>
     <section class="sedona-welcome">
-      <h1 class="visually-hidden">Добро подаловать в Седону</h1>
+      <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
       <div class="sedona-welcome__image-wrapper">
-        <img class="sedona-welcome__image" src="img/text-index.svg">
+        <img class="sedona-welcome__image" src="img/text-index.svg" alt="Добро пожаловать в Седону" width="282"
+          height="214">
       </div>
 
       <div class="sedona-welcome__content">
@@ -51,10 +53,10 @@
 
     <section class="causes">
       <h2 class="visually-hidden">Причины остаться в Седоне</h2>
-      <ul class="causes__list">
+      <ul class="causes__list list-reset">
         <li class="causes__item-container">
           <div class="causes__item">
-            <div class="causes__content-wrapper">
+            <div class="causes__content-wrapper causes__content-wrapper--blue">
               <h2 class="causes__title">Настоящий городок</h2>
 
               <p class="causes__text">- №1 -</p>
@@ -62,28 +64,22 @@
             </div>
 
             <div class="causes__img-container">
-              <img class="causes__image" src="img/photo-city.jpg">
+              <img src="img/photo-city.jpg" alt="Фото города" width="520" height="260">
             </div>
           </div>
 
-          <ul class="causes__more">
+          <ul class="causes__more list-reset">
             <li class="causes__content-wrapper causes__content-wrapper--housing">
-              <img class="causes__image" src="img/icon-house.svg">
-
               <h2 class="causes__title">Жилье</h2>
               <p class="causes__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
 
             <li class="causes__content-wrapper causes__content-wrapper--souvenirs">
-              <img class="causes__image" src="img/icon-gift.svg">
-
               <h2 class="causes__title">Сувениры</h2>
               <p class="causes__text">Не только китайского, но и местного производства!</p>
             </li>
 
             <li class="causes__content-wrapper causes__content-wrapper--food">
-              <img class="causes__image" src="img/icon-burger.svg">
-
               <h2 class="causes__title">Еда</h2>
               <p class="causes__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
@@ -92,7 +88,7 @@
 
         <li class="causes__item-container">
           <div class="causes__item">
-            <div class="causes__content-wrapper">
+            <div class="causes__content-wrapper causes__content-wrapper--blue">
               <h2 class="causes__title">Так есть мост дьявола</h2>
 
               <p class="causes__text">- №2 -</p>
@@ -100,32 +96,38 @@
             </div>
 
             <div class="causes__img-container">
-              <img class="causes__image" src="img/photo-bridge.jpg">
+              <img src="img/photo-bridge.jpg" alt="Фото моста" width="520" height="260">
             </div>
           </div>
         </li>
 
         <li class="causes__item-container">
-          <div class="causes__content-wrapper">
-            <h2 class="causes__title">Небольшая площадь</h2>
-            <p class="causes__text">- №3 -</p>
-            <p class="causes__text">Все интересные места находятся очень близко</p>
+          <div class="causes__item">
+            <div class="causes__content-wrapper causes__content-wrapper--grey">
+              <h2 class="causes__title">Небольшая площадь</h2>
+              <p class="causes__text">- №3 -</p>
+              <p class="causes__text">Все интересные места находятся очень близко</p>
+            </div>
           </div>
         </li>
 
         <li class="causes__item-container">
-          <div class="causes__content-wrapper">
-            <h2 class="causes__title">Красивая дорога</h2>
-            <p class="causes__text">- №4 -</p>
-            <p class="causes__text">Ехать в Седону из Лас-Вегаса совсен не скучно!</p>
+          <div class="causes__item">
+            <div class="causes__content-wrapper causes__content-wrapper--grey">
+              <h2 class="causes__title">Красивая дорога</h2>
+              <p class="causes__text">- №4 -</p>
+              <p class="causes__text">Ехать в Седону из Лас-Вегаса совсен не скучно!</p>
+            </div>
           </div>
         </li>
 
         <li class="causes__item-container">
-          <div class="causes__content-wrapper">
-            <h2 class="causes__title">Мало туристов</h2>
-            <p class="causes__text">- №5 -</p>
-            <p class="causes__text">Большенство едет в гранд каньон и отлпится там</p>
+          <div class="causes__item">
+            <div class="causes__content-wrapper causes__content-wrapper--grey">
+              <h2 class="causes__title">Мало туристов</h2>
+              <p class="causes__text">- №5 -</p>
+              <p class="causes__text">Большенство едет в гранд каньон и отлпится там</p>
+            </div>
           </div>
         </li>
       </ul>
@@ -140,9 +142,8 @@
 
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
-      <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+      <iframe
         src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
-        <a href="https://www.gps.ie/car-satnav-gps/">car navigation systems</a>
       </iframe>
     </section>
   </main>
@@ -150,22 +151,22 @@
   <footer class="footer container">
     <a class="footer__hashtag" href="#">#visitsedona</a>
 
-    <ul class="footer__social social">
+    <ul class="footer__social social list-reset">
       <li class="social__item">
-        <a class="social__link">
-          <img class="social__icon" src="img/icon-twitter.svg">
+        <a class="social__link social__link--twitter">
+          <img src="img/icon-twitter.svg" alt="Twitter" width="18" height="15">
         </a>
       </li>
 
       <li class="social__item">
-        <a class="social__link">
-          <img class="social__icon" src="img/icon-facebook.svg">
+        <a class="social__link social__link--facebook">
+          <img src="img/icon-facebook.svg" alt="Facebook" width="9" height="19">
         </a>
       </li>
 
       <li class="social__item">
-        <a class="social__link">
-          <img class="social__icon" src="img/icon-youtube.svg">
+        <a class="social__link social__link--youtube">
+          <img src="img/icon-youtube.svg" alt="Youtube" width="20" height="14">
         </a>
       </li>
     </ul>
@@ -173,7 +174,7 @@
     <div class="footer__developed">
       <p class="footer__developed-text">Разработано</p>
       <a class="footer__developed-link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="footer__developed-logo" src="img/htmlacademy-icon.svg">
+        <img src="img/htmlacademy-icon.svg" alt="Логотип HtmlAcademy" width="27" height="34">
       </a>
     </div>
   </footer>

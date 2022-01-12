@@ -1,0 +1,19 @@
+.social {
+  display: flex;
+  justify-content: center;
+  padding: 34px 0;
+}
+
+.social__item {
+  margin: 0 3px;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 48px;
+
+  background-color: $blue;
+}
