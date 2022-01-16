@@ -9,3 +9,31 @@
 .search__button {
   font-weight: 700;
 }
+
+@media (min-width: $tablet-width) {
+  .search {
+    justify-content: center;
+    padding: 58px 166px;
+  }
+
+  .search__content-wrapper {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 435px;
+  }
+
+  .search__button {
+    margin: 37px 12px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .search {
+    padding: 58px 388px;
+  }
+
+  .search__content-wrapper {
+    width: 458px;
+  }
+}

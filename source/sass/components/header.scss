@@ -1,3 +1,22 @@
 .header {
+  display: flex;
+  flex-direction: column;
   width: 100%;
+}
+
+.header__logo {
+  height: 85px;
+}
+
+@media (min-width: $tablet-width) {
+  .header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 56px;
+    margin: 0 auto;
+  }
+
+  .header__logo {
+    width: 156px;
+  }
 }

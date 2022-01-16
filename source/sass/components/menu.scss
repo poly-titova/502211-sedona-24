@@ -15,3 +15,45 @@
   color: #ffffff;
   text-decoration: none;
 }
+
+@media (min-width: $tablet-width) {
+  .menu {
+    height: 56px;
+  }
+
+  .menu__list {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 auto;
+  }
+
+  .menu__item {
+    display: flex;
+    justify-content: center;
+    width: 153px;
+    height: 56px;
+
+    padding-top: 16px;
+
+    background-color: #ffffff;
+
+    &--current a {
+      color: #766357;
+    }
+  }
+
+  .menu__link {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .menu__item {
+    width: 239px;
+  }
+}
