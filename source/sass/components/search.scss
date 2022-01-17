@@ -1,5 +1,28 @@
 .search {
   padding: 33px 20px 49px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: center;
+    padding: 58px 166px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 58px 388px;
+  }
+}
+
+.search__content-wrapper {
+  @media (min-width: $tablet-width) {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 435px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 458px;
+  }
 }
 
 .search__title {
@@ -8,4 +31,8 @@
 
 .search__button {
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    margin: 37px 12px 0;
+  }
 }

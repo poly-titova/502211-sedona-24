@@ -1,9 +1,46 @@
+.causes__item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    min-height: 256px;
+  }
+}
+
+.causes__item--second .causes__content-wrapper {
+  @media (min-width: $tablet-width) {
+    order: 2;
+    padding: 27px 36px 41px;
+  }
+}
+
 .causes__title {
   font-size: 18px;
   line-height: 26px;
 }
 
+.causes__img-container {
+  @media (min-width: $tablet-width) {
+    width: 512px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+  }
+}
+
 .causes__content-wrapper {
+  @media (min-width: $tablet-width) {
+    width: 256px;
+
+    padding: 40px 32px 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+
+    padding: 47px 53px 57px;
+  }
+
   &--blue {
     padding: 55px 0 39px;
 
@@ -19,14 +56,89 @@
   }
 }
 
+.causes__more {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.causes__more .causes__item-container {
+  @media (min-width: $tablet-width) {
+    width: 256px;
+    min-height: 330px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+  }
+}
+
 .causes__more .causes__content-wrapper {
   padding-left: 48px;
+
+  &--housing {
+    @media (min-width: $tablet-width) {
+      padding: 158px 36px 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 159px 58px 80px;
+    }
+  }
+
+  &--souvenirs {
+    @media (min-width: $tablet-width) {
+      padding: 158px 31px 81px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 157px 44px 81px;
+    }
+  }
+
+  &--food {
+    @media (min-width: $tablet-width) {
+      order: 2;
+      padding: 158px 38px 59px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 158px 78px 80px;
+    }
+  }
 }
 
 .causes__more .causes__title {
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
 }
 
 .causes__more .causes__text {
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
+}
+
+.causes__list-more {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.causes__list-more .causes__item-container {
+  @media (min-width: $tablet-width) {
+    width: 256px;
+    min-height: 256px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+  }
 }

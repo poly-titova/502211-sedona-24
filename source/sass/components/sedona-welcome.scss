@@ -5,6 +5,16 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    min-height: 518px;
+
+    background-image: url("../img/back-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 .sedona-welcome__image {
@@ -12,9 +22,19 @@
 }
 
 .sedona-welcome__content {
-  padding: 32px 0 11px;
-
+  padding: 32px 25px 11px;
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    width: 540px;
+    min-height: 110px;
+    margin: 0 auto;
+    padding: 23px 25px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 35px 25px 28px;
+  }
 }
 
 .sedona-welcome__title {

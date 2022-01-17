@@ -1,3 +1,31 @@
 .header {
+  display: flex;
+  flex-direction: column;
   width: 100%;
+}
+
+.header__wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    justify-content: space-between;
+    height: 56px;
+    margin: 0 auto;
+  }
+}
+
+.header__logo {
+  height: 85px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 153px;
+
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+  }
 }
