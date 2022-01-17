@@ -4,19 +4,28 @@
   width: 100%;
 }
 
-.header__logo {
-  height: 85px;
-}
-
-@media (min-width: $tablet-width) {
-  .header__wrapper {
-    display: flex;
+.header__wrapper {
+  @media (min-width: $tablet-width) {
+    display: grid;
     justify-content: space-between;
     height: 56px;
     margin: 0 auto;
   }
+}
 
-  .header__logo {
-    width: 156px;
+.header__logo {
+  height: 85px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 153px;
+
+    margin-left: 306px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+
+    margin-left: 478px;
   }
 }
