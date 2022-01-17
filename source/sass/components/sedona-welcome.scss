@@ -22,19 +22,18 @@
 }
 
 .sedona-welcome__content {
-  margin: 32px 17px 11px;
-
+  padding: 32px 25px 11px;
   background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    width: 520px;
+    width: 540px;
     min-height: 110px;
-
-    margin: 36px 124px 53px;
+    margin: 0 auto;
+    padding: 23px 25px 40px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 37px 358px 41px;
+    padding: 35px 25px 28px;
   }
 }
 
