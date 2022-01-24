@@ -1,9 +1,50 @@
+.places__list {
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 32px 60px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
 .places__item-container {
   display: block;
+  padding: 22px 20px 15px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    min-width: 324px;
+    min-height: 267px;
+    float: left;
+
+    padding: 0;
+  }
+}
+
+.places__description {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    text-align: left;
+    background-color: $grey-form;
+  }
+}
+
+.places__item-container--first .places__image {
+  width: 100%;
+  min-height: 400px;
+}
+
+.places__title-container {
+  padding: 22px 20px 15px;
 }
 
 .places__title {
   font-size: 18px;
+
+  margin: 0;
 }
 
 .places__like-count {
@@ -18,7 +59,19 @@
   border: none;
 }
 
+.places__image-wrapper {
+  width: auto;
+}
+
 .places__image-wrapper img {
   display: block;
   width: 100%;
+  min-height: 280px;
+
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    min-width: 324px;
+    min-height: 267px;
+  }
 }
