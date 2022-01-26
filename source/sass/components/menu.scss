@@ -14,6 +14,83 @@
 }
 
 .menu__list {
+  display: none;
+}
+
+.menu__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 63px;
+  height: 56px;
+
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.menu__toggle::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  width: 23px;
+  height: 4px;
+
+  background-color: $blue;
+  box-shadow: 0 9px 0 0 $blue, 0 17px 0 0 $blue;
+}
+
+.menu__toggle:hover::before {
+  background-color: fade($blue, 60%);
+  box-shadow: 0 9px 0 0 fade($blue, 60%), 0 17px 0 0 fade($blue, 60%);
+}
+
+.menu__toggle:active::before {
+  background-color: fade($blue, 30%);
+  box-shadow: 0 9px 0 0 fade($blue, 30%), 0 17px 0 0 fade($blue, 30%);
+}
+
+.menu--opened .menu__list {
+  display: block;
+}
+
+.menu--opened .menu__toggle::before,
+.menu--opened .menu__toggle::after {
+  content: "";
+  position: absolute;
+  top: 26px;
+  right: 18px;
+  width: 27px;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.menu--opened .menu__toggle::before {
+  transform: rotate(45deg);
+  box-shadow: none;
+}
+
+.menu--opened .menu__toggle::after {
+  transform: rotate(-45deg);
+}
+
+.menu--opened .menu__toggle:hover::before,
+.menu--opened .menu__toggle:hover::after {
+  background-color: fade(#ffffff, 60%);
+}
+
+.menu--opened .menu__toggle:active::before,
+.menu--opened .menu__toggle:active::after {
+  background-color: fade(#ffffff, 30%);
+}
+
+.menu__list {
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;

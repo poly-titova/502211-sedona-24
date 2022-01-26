@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="no-js">
   <header class="header">
     <div class="header__wrapper">
       <a class="header__logo" href="index.html">
@@ -35,6 +35,10 @@
             <a class="menu__link" href="#">HtmlAcademy</a>
           </li>
         </ul>
+
+        <button class="menu__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       </nav>
     </div>
   </header>
@@ -126,14 +130,14 @@
         <img class="sedona-video__video" alt="Видео" src="img/video-mobile.jpg">
         <div class="sedona-video__control-video controller">
           <div class="controller__slider slider">
-            <div class="slider__volume-scale"></div>
+            <button class="slider__volume-scale"></button>
             <div class="slider__volume-slider"></div>
           </div>
 
           <div class="controller__buttons button-settings">
-            <div class="button-settings__replay"></div>
-            <div class="button-settings__subtitles"></div>
-            <div class="button-settings__fullscreen"></div>
+            <button class="button-settings__replay"></button>
+            <button class="button-settings__subtitles"></button>
+            <button class="button-settings__fullscreen"></button>
           </div>
         </div>
       </div>
@@ -170,6 +174,9 @@
       </a>
     </div>
   </footer>
+
+  <script src="js/script.js"></script>
+
 </body>
 
 </html>

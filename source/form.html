@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="no-js">
   <header class="header">
     <div class="header__wrapper">
       <a class="header__logo" href="index.html">
@@ -35,6 +35,10 @@
             <a class="menu__link" href="#">HtmlAcademy</a>
           </li>
         </ul>
+
+        <button class="menu__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       </nav>
     </div>
   </header>
@@ -79,7 +83,8 @@
           <h2 class="form__title">Контактная информация:</h2>
           <ul class="form__list list-reset">
             <li class="form__content-wrapper">
-              <label class="form__label" for="form__contact">Контактный номер<sup>*</sup>:</label>
+              <label class="form__label" for="form__contact"><span class="form__label--hidden">Контактный</span>
+                номер<sup>*</sup>:</label>
               <div class="form__content-icon form__content-icon--tel">
                 <input class="form__input" type="text" id="form__contact" placeholder="Введите телефон">
                 <span class="form__icon form__icon--tel">
@@ -178,7 +183,7 @@
         </fieldset>
 
         <fieldset class="form__item-container form__item-container--submit">
-          <p class="form__text"><sup>*</sup> - обязательные поля</p>
+          <p class="form__text form__text--hidden"><sup>*</sup> - обязательные поля</p>
           <button class="form__submit button" type="submit">Отправить отзыв</button>
         </fieldset>
       </form>
@@ -215,6 +220,9 @@
       </a>
     </div>
   </footer>
+
+  <script src="js/script.js"></script>
+
 </body>
 
 </html>
