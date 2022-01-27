@@ -1,4 +1,8 @@
 .menu {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: center;
@@ -13,8 +17,8 @@
   }
 }
 
-.menu__list {
-  display: none;
+.no-js .menu {
+  position: relative;
 }
 
 .menu__toggle {
@@ -34,6 +38,10 @@
   }
 }
 
+.no-js .menu__toggle {
+  display: none;
+}
+
 .menu__toggle::before {
   content: "";
   position: absolute;
@@ -44,16 +52,6 @@
 
   background-color: $blue;
   box-shadow: 0 9px 0 0 $blue, 0 17px 0 0 $blue;
-}
-
-.menu__toggle:hover::before {
-  background-color: fade($blue, 60%);
-  box-shadow: 0 9px 0 0 fade($blue, 60%), 0 17px 0 0 fade($blue, 60%);
-}
-
-.menu__toggle:active::before {
-  background-color: fade($blue, 30%);
-  box-shadow: 0 9px 0 0 fade($blue, 30%), 0 17px 0 0 fade($blue, 30%);
 }
 
 .menu--opened .menu__list {
@@ -91,6 +89,8 @@
 }
 
 .menu__list {
+  display: none;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
