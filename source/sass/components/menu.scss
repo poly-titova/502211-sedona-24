@@ -4,6 +4,7 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     display: flex;
     justify-content: center;
 
@@ -86,6 +87,10 @@
 .menu--opened .menu__toggle:active::before,
 .menu--opened .menu__toggle:active::after {
   background-color: fade(#ffffff, 30%);
+}
+
+.no-js .menu__list {
+  display: block;
 }
 
 .menu__list {

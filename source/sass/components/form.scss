@@ -34,7 +34,6 @@
   padding: 20px 0 25px;
 
   @media (min-width: $tablet-width) {
-    order: 2;
     width: 50%;
     padding: 60px 0 36px 58px;
   }
@@ -56,7 +55,6 @@
   padding: 20px 0 28px;
 
   @media (min-width: $tablet-width) {
-    order: 3;
     padding: 25px 0 33px;
   }
 
@@ -105,7 +103,7 @@
   padding: 20px 4px 31px;
 
   @media (min-width: $tablet-width) {
-    order: 1;
+    order: -1;
     width: 50%;
     padding: 60px 30px 38px 64px;
   }
@@ -129,7 +127,6 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    order: 4;
 
     padding: 25px 150px 37px;
   }
@@ -160,8 +157,6 @@
   padding: 20px 0 25px;
 
   @media (min-width: $tablet-width) {
-    order: 5;
-
     padding: 37px 0 29px;
   }
 }
@@ -182,7 +177,6 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
-    order: 6;
 
     padding: 29px 0 61px;
     margin: 0;
@@ -194,7 +188,6 @@
 }
 
 .form__item-container--submit .form__text {
-  order: 2;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -217,10 +210,11 @@
   width: 100%;
   height: 160px;
 
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  padding: 18px 21px 24px;
 
   background-color: $grey-form;
   border: none;
@@ -341,6 +335,12 @@
   border: 5px solid #f2f2f2;
   box-shadow: 0 0 0 1px #f2f2f2;
   background-color: #f2f2f2;
+}
+
+.form__input-radio:focus + .form__radio {
+  border: 5px solid #e5e5e5;
+  box-shadow: 0 0 0 1px #e5e5e5;
+  background-color: #e5e5e5;
 }
 
 .form__input-radio:checked + .form__radio {
