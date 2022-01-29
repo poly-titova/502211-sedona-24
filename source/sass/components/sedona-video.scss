@@ -1,0 +1,26 @@
+.sedona-video__content-wrapper {
+  padding: 32px 27px 33px;
+
+  @media (min-width: $tablet-width) {
+    padding: 59px 161px 68px;
+  }
+}
+
+.sedona-video__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.sedona-video__video-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    padding: 68px 60px 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 66px 199px 85px;
+  }
+}

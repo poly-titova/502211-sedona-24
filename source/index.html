@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="no-js">
   <header class="header">
     <div class="header__wrapper">
       <a class="header__logo">
@@ -35,6 +35,10 @@
             <a class="menu__link" href="#">HtmlAcademy</a>
           </li>
         </ul>
+
+        <button class="menu__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       </nav>
     </div>
   </header>
@@ -109,37 +113,35 @@
           </div>
         </li>
 
-        <div class="causes__list-more">
-          <li class="causes__item-container">
-            <div class="causes__item">
-              <div class="causes__content-wrapper causes__content-wrapper--grey">
-                <h2 class="causes__title">Небольшая площадь</h2>
-                <p class="causes__text">- №3 -</p>
-                <p class="causes__text">Все интересные места находятся очень близко</p>
-              </div>
+        <li class="causes__item-container">
+          <div class="causes__item">
+            <div class="causes__content-wrapper causes__content-wrapper--grey">
+              <h2 class="causes__title">Небольшая площадь</h2>
+              <p class="causes__text">- №3 -</p>
+              <p class="causes__text">Все интересные места находятся очень близко</p>
             </div>
-          </li>
+          </div>
+        </li>
 
-          <li class="causes__item-container">
-            <div class="causes__item">
-              <div class="causes__content-wrapper causes__content-wrapper--grey">
-                <h2 class="causes__title">Красивая дорога</h2>
-                <p class="causes__text">- №4 -</p>
-                <p class="causes__text">Ехать в Седону из Лас-Вегаса совсен не скучно!</p>
-              </div>
+        <li class="causes__item-container">
+          <div class="causes__item">
+            <div class="causes__content-wrapper causes__content-wrapper--grey">
+              <h2 class="causes__title">Красивая дорога</h2>
+              <p class="causes__text">- №4 -</p>
+              <p class="causes__text">Ехать в Седону из Лас-Вегаса совсен не скучно!</p>
             </div>
-          </li>
+          </div>
+        </li>
 
-          <li class="causes__item-container">
-            <div class="causes__item">
-              <div class="causes__content-wrapper causes__content-wrapper--grey">
-                <h2 class="causes__title">Мало туристов</h2>
-                <p class="causes__text">- №5 -</p>
-                <p class="causes__text">Большенство едет в гранд каньон и толпится там</p>
-              </div>
+        <li class="causes__item-container">
+          <div class="causes__item">
+            <div class="causes__content-wrapper causes__content-wrapper--grey">
+              <h2 class="causes__title">Мало туристов</h2>
+              <p class="causes__text">- №5 -</p>
+              <p class="causes__text">Большенство едет в гранд каньон и толпится там</p>
             </div>
-          </li>
-        </div>
+          </div>
+        </li>
       </ul>
     </section>
 
@@ -190,6 +192,8 @@
       </a>
     </div>
   </footer>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>

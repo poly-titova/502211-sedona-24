@@ -1,20 +1,16 @@
 .header {
-  display: flex;
-  flex-direction: column;
+  position: relative;
   width: 100%;
 }
 
-.header__wrapper {
-  @media (min-width: $tablet-width) {
-    display: grid;
-    justify-content: space-between;
-    height: 56px;
-    margin: 0 auto;
-  }
-}
-
 .header__logo {
+  display: block;
+  position: absolute;
+  width: 102px;
   height: 85px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 
   @media (min-width: $tablet-width) {
     position: absolute;

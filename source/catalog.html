@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="no-js">
   <header class="header">
     <div class="header__wrapper">
       <a class="header__logo" href="index.html">
@@ -24,7 +24,9 @@
           <li class="menu__item  menu__item--current">
             <a class="menu__link">Фото и видео</a>
           </li>
+        </ul>
 
+        <ul class="menu__list menu__list--other list-reset">
           <li class="menu__item">
             <a class="menu__link" href="form.html">Форма отзыва</a>
           </li>
@@ -33,14 +35,18 @@
             <a class="menu__link" href="#">HtmlAcademy</a>
           </li>
         </ul>
+
+        <button class="menu__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main class="main">
     <section class="sedona-welcome">
       <div class="sedona-welcome__image-wrapper sedona-welcome__image-wrapper--page">
-        <img class="sedona-welcome__image" src="img/sedona-welcome.svg" alt="Седона" width="229" height="39">
+        <img class="sedona-welcome__image" src="img/sedona-welcome.svg" alt="Седона" width="457" height="78">
       </div>
 
       <div class="sedona-welcome__content">
@@ -53,9 +59,9 @@
     <section class="places">
       <h2 class="visually-hidden">Лист фотографий</h2>
       <ul class="places__list list-reset">
-        <li class="places__item-container">
+        <li class="places__item-container places__item-container--first">
           <div class="places__image-wrapper">
-            <img class="places__image" alt="Неродные просторы" src="img/photo-1-mobile.jpg" width="280" height="280">
+            <img class="places__image" alt="Неродные просторы" src="img/photo-1-desktop.jpg" width="280" height="280">
           </div>
 
           <div class="places__description">
@@ -69,7 +75,8 @@
 
         <li class="places__item-container">
           <div class="places__image-wrapper">
-            <img class="places__image" alt="Местная ростительность" src="img/photo-2-mobile.jpg" width="280" height="280">
+            <img class="places__image" alt="Местная ростительность" src="img/photo-2-desktop.jpg" width="280"
+              height="280">
           </div>
 
           <div class="places__description">
@@ -83,7 +90,7 @@
 
         <li class="places__item-container">
           <div class="places__image-wrapper">
-            <img class="places__image" alt="Дорога на север" src="img/photo-3-mobile.jpg" width="280" height="280">
+            <img class="places__image" alt="Дорога на север" src="img/photo-3-desktop.jpg" width="280" height="280">
           </div>
 
           <div class="places__description">
@@ -123,14 +130,14 @@
         <img class="sedona-video__video" alt="Видео" src="img/video-mobile.jpg">
         <div class="sedona-video__control-video controller">
           <div class="controller__slider slider">
-            <div class="slider__volume-scale"></div>
+            <button class="slider__volume-scale"></button>
             <div class="slider__volume-slider"></div>
           </div>
 
           <div class="controller__buttons button-settings">
-            <div class="button-settings__replay"></div>
-            <div class="button-settings__subtitles"></div>
-            <div class="button-settings__fullscreen"></div>
+            <button class="button-settings__replay"></button>
+            <button class="button-settings__subtitles"></button>
+            <button class="button-settings__fullscreen"></button>
           </div>
         </div>
       </div>
@@ -167,6 +174,9 @@
       </a>
     </div>
   </footer>
+
+  <script src="js/script.js"></script>
+
 </body>
 
 </html>

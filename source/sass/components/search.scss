@@ -3,11 +3,13 @@
 
   @media (min-width: $tablet-width) {
     justify-content: center;
-    padding: 58px 166px;
+    padding-top: 58px;
+    padding-bottom: 166px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 58px 388px;
+    padding-top: 58px;
+    padding-bottom: 388px;
   }
 }
 

@@ -19,6 +19,8 @@
 }
 
 .causes__img-container {
+  height: 100%;
+
   @media (min-width: $tablet-width) {
     width: 512px;
   }
