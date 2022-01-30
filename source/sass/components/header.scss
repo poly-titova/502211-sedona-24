@@ -23,5 +23,10 @@
 
   @media (min-width: $desktop-width) {
     width: 244px;
+    height: 97px;
+
+    background-image: url("../img/logotype-blue.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
   }
 }
