@@ -1,0 +1,34 @@
+.slider {
+  position: absolute;
+  width: 90%;
+  min-height: 45px;
+
+  margin: -38px 5%;
+
+  background-color: rgba(#000000, 60%);
+}
+
+.slider__scale {
+  position: absolute;
+  width: 90%;
+  height: 3px;
+  top: 50%;
+  left: 5%;
+
+  background-color: rgba(#ffffff, 20%);
+}
+
+.slider__control {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  top: -170%;
+  left: 15%;
+
+  padding: 0;
+
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+}

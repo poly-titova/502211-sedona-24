@@ -127,17 +127,29 @@
       </div>
 
       <div class="sedona-video__video-wrapper">
-        <img class="sedona-video__video" alt="Видео" src="img/video-mobile.jpg">
+        <img class="sedona-video__video" alt="Видео" src="img/video-desktop.jpg">
         <div class="sedona-video__control-video controller">
           <div class="controller__slider slider">
-            <button class="slider__volume-scale"></button>
-            <div class="slider__volume-slider"></div>
+            <div class="slider__scale">
+              <button class="slider__control">
+                <span class="visually-hidden">Ползунок</span>
+              </button>
+            </div>
           </div>
 
           <div class="controller__buttons button-settings">
-            <button class="button-settings__replay"></button>
-            <button class="button-settings__subtitles"></button>
-            <button class="button-settings__fullscreen"></button>
+            <button class="button-settings__replay">
+              <span class="visually-hidden">Запустить видео заново</span>
+            </button>
+
+            <div class="button-settings__columb">
+              <button class="button-settings__subtitles">
+                <span class="visually-hidden">Субтитры</span>
+              </button>
+              <button class="button-settings__fullscreen">
+                <span class="visually-hidden">Открыть во весь экран</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
