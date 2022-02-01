@@ -1,59 +1,125 @@
 .sedona-welcome__image-wrapper {
   padding-top: 90px;
+  padding-bottom: 86px;
 
-  background-image: url("../img/back-mobile.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("../img/intro-triangle.svg"), url("../img/back-mobile.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center bottom, center;
   background-size: cover;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background: url("../img/intro-triangle.svg"),
+      url("../img/back-mobile@2.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center bottom, center;
+    background-size: cover;
+  }
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    min-height: 518px;
+    padding-top: 75px;
+    padding-bottom: 91px;
 
-    background-image: url("../img/back-desktop.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: url("../img/intro-triangle.svg"), url("../img/back-tablet.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center bottom, center;
+    background-size: 156%, cover;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/intro-triangle.svg"),
+        url("../img/back-tablet@2.jpg");
+      background-position: center bottom, center;
+      background-size: 156%, cover;
+    }
   }
-}
 
-.sedona-welcome__vectors {
-  min-height: 428px;
+  @media (min-width: $desktop-width) {
+    padding-bottom: 93px;
 
-  background-image: url("../img/intro-triangle.svg");
-  background-repeat: no-repeat;
-  background-position: bottom center;
-}
+    background: url("../img/intro-triangle.svg"), url("../img/back-desktop.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center bottom, center;
+    background-size: 100%, cover;
 
-.sedona-welcome__image-wrapper--page {
-  padding: 52px 45px 67px;
-
-  @media (min-width: $tablet-width) {
-    min-height: 290px;
-    padding: 95px 154px 117px;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/intro-triangle.svg"),
+        url("../img/back-desktop@2.jpg");
+      background-position: center bottom, center;
+      background-size: 100%, cover;
+    }
   }
 }
 
 .sedona-welcome__image {
+  display: block;
+  width: 282px;
   margin: 0 auto;
-  margin-top: 90px;
+
+  @media (min-width: $tablet-width) {
+    width: 461px;
+  }
+}
+
+.sedona-welcome--page .sedona-welcome__image-wrapper {
+  padding: 52px 45px 67px;
+
+  @media (min-width: $tablet-width) {
+    padding: 93px 154px 117px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 102px 154px 120px;
+  }
+}
+
+.sedona-welcome--page .sedona-welcome__content {
+  padding: 14px 21px 13px;
+
+  border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: $tablet-width) {
+    padding: 38px 48px 64px;
+
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 77px 48px 65px;
+  }
+
+  &::after {
+    display: none;
+  }
+}
+
+.sedona-welcome--form .sedona-welcome__content {
+  padding-top: 21px;
+  padding-bottom: 2px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 92px;
+  }
 }
 
 .sedona-welcome__content {
   position: relative;
-  padding: 32px 25px 11px;
+
+  padding: 14px 25px 20px;
 
   @media (min-width: $tablet-width) {
     width: 540px;
-    min-height: 110px;
     margin: 0 auto;
     padding-top: 23px;
-    padding-bottom: 40px;
+    padding-bottom: 41px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 35px;
-    padding-bottom: 28px;
+    padding-bottom: 29px;
   }
 }
 
@@ -62,9 +128,11 @@
   position: absolute;
   bottom: -16px;
   left: 0;
+  z-index: 1;
 
   width: 100%;
   height: 37px;
+
   background-image: url("../img/welcome-triangle.svg");
   background-repeat: no-repeat;
   background-position: bottom center;
@@ -75,5 +143,28 @@
 }
 
 .sedona-welcome__title {
+  margin-bottom: 29px;
+
+  font-weight: 700;
   font-size: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+
+.sedona-welcome--page .sedona-welcome__title {
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+  }
+}
+
+.sedona-welcome__text {
+  margin-top: 0;
+}
+
+.sedona-welcome--form .sedona-welcome__text {
+  line-height: 24px;
 }

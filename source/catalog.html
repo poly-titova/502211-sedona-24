@@ -12,7 +12,11 @@
   <header class="header">
     <div class="header__wrapper">
       <a class="header__logo" href="index.html">
-        <img src="img/logotype-mobile.svg" alt="Логотип Sedona" width="102" height="84">
+        <picture>
+          <source media="(min-width: 1200px)" srcset=" img/logotype-desktop.svg" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg" type="image/svg+xml">
+          <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Седона">
+        </picture>
       </a>
 
       <nav class="header__nav menu">
@@ -44,8 +48,8 @@
   </header>
 
   <main class="main">
-    <section class="sedona-welcome">
-      <div class="sedona-welcome__image-wrapper sedona-welcome__image-wrapper--page">
+    <section class="sedona-welcome sedona-welcome--page">
+      <div class="sedona-welcome__image-wrapper">
         <img class="sedona-welcome__image" src="img/sedona-welcome.svg" alt="Седона" width="457" height="78">
       </div>
 
@@ -61,7 +65,14 @@
       <ul class="places__list list-reset">
         <li class="places__item-container places__item-container--first">
           <div class="places__image-wrapper">
-            <img class="places__image" alt="Неродные просторы" src="img/photo-1-desktop.jpg" width="280" height="280">
+            <picture>
+              <source type="image/jpg" media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg, img/photo-1-desktop@2.jpg 2x">
+              <source type="image/jpg" media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg, img/photo-1-tablet@2.jpg 2x">
+              <source type="image/jpg" srcset="img/photo-1-mobile.jpg, img/photo-1-mobile@2.jpg 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg, img/photo-1-desktop@2.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg, img/photo-1-tablet@2.jpg 2x">
+              <img src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2.jpg 2x" alt="неродные просторы" width="280" height="280">
+            </picture>
           </div>
 
           <div class="places__description">
@@ -75,13 +86,19 @@
 
         <li class="places__item-container">
           <div class="places__image-wrapper">
-            <img class="places__image" alt="Местная ростительность" src="img/photo-2-desktop.jpg" width="280"
-              height="280">
+            <picture>
+              <source type="image/jpg" media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg, img/photo-2-desktop@2.jpg 2x">
+              <source type="image/jpg" media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg, img/photo-2-tablet@2.jpg 2x">
+              <source type="image/jpg" srcset="img/photo-2-mobile.jpg, img/photo-2-mobile@2.jpg 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg, img/photo-2-desktop@2.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg, img/photo-2-tablet@2.jpg 2x">
+              <img src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2.jpg 2x" alt="неродные просторы" width="280" height="280">
+            </picture>
           </div>
 
           <div class="places__description">
             <div class="places__title-container">
-              <h3 class="places__title">Местная ростительность</h3>
+              <h3 class="places__title">Местная растительность</h3>
               <p class="places__text">Автор фото: Сергей</p>
             </div>
             <button class="places__like-count" type="button">143</button>
@@ -90,7 +107,14 @@
 
         <li class="places__item-container">
           <div class="places__image-wrapper">
-            <img class="places__image" alt="Дорога на север" src="img/photo-3-desktop.jpg" width="280" height="280">
+            <picture>
+              <source type="image/jpg" media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg, img/photo-3-desktop@2.jpg 2x">
+              <source type="image/jpg" media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg, img/photo-3-tablet@2.jpg 2x">
+              <source type="image/jpg" srcset="img/photo-3-mobile.jpg, img/photo-3-mobile@2.jpg 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg, img/photo-3-desktop@2.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg, img/photo-3-tablet@2.jpg 2x">
+              <img src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2.jpg 2x" alt="неродные просторы" width="280" height="280">
+            </picture>
           </div>
 
           <div class="places__description">
@@ -104,7 +128,14 @@
 
         <li class="places__item-container">
           <div class="places__image-wrapper">
-            <img class="places__image" alt="Мост Дьявола" src="img/photo-4-desktop.jpg" width="280" height="280">
+            <picture>
+              <source type="image/jpg" media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg, img/photo-4-desktop@2.jpg 2x">
+              <source type="image/jpg" media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg, img/photo-4-tablet@2.jpg 2x">
+              <source type="image/jpg" srcset="img/photo-4-mobile.jpg, img/photo-4-mobile@2.jpg 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg, img/photo-4-desktop@2.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg, img/photo-4-tablet@2.jpg 2x">
+              <img src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2.jpg 2x" alt="неродные просторы" width="280" height="280">
+            </picture>
           </div>
 
           <div class="places__description">
@@ -127,30 +158,23 @@
       </div>
 
       <div class="sedona-video__video-wrapper">
-        <img class="sedona-video__video" alt="Видео" src="img/video-desktop.jpg">
-        <div class="sedona-video__control-video controller">
-          <div class="controller__slider slider">
-            <div class="slider__scale">
-              <button class="slider__control">
-                <span class="visually-hidden">Ползунок</span>
-              </button>
+        <picture>
+          <source type="image/jpg" media="(min-width: 1200px)" srcset="img/video-desktop.jpg, img/video-desktop@2.jpg 2x">
+          <source type="image/jpg" media="(min-width: 768px)" srcset="img/video-tablet.jpg, img/video-tablet@2.jpg 2x">
+          <source type="image/jpg" srcset="img/video-mobile.jpg, img/video-mobile@2.jpg 2x">
+          <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg, img/video-desktop@2.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/video-tablet.jpg, img/video-tablet@2.jpg 2x">
+          <img src="img/video-mobile.jpg" srcset="img/video-mobile@2.jpg 2x" alt="Видео">
+        </picture>
+        <div class="sedona-video__panel">
+          <button class="sedona-video__replay" type="button"></button>
+          <div class="sedona-video__play">
+            <div class="sedona-video__line">
+              <button class="sedona-video__line-button" type="button"></button>
             </div>
           </div>
-
-          <div class="controller__buttons button-settings">
-            <button class="button-settings__replay">
-              <span class="visually-hidden">Запустить видео заново</span>
-            </button>
-
-            <div class="button-settings__columb">
-              <button class="button-settings__subtitles">
-                <span class="visually-hidden">Субтитры</span>
-              </button>
-              <button class="button-settings__fullscreen">
-                <span class="visually-hidden">Открыть во весь экран</span>
-              </button>
-            </div>
-          </div>
+          <button class="sedona-video__subtitles" type="button"></button>
+          <button class="sedona-video__fullscreen" type="button"></button>
         </div>
       </div>
     </section>

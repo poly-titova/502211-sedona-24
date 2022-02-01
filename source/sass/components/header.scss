@@ -1,32 +1,38 @@
 .header {
   position: relative;
+
   width: 100%;
 }
 
+.header__wrapper {
+  min-height: 56px;
+}
+
 .header__logo {
-  display: block;
   position: absolute;
-  width: 102px;
-  height: 85px;
   top: 0;
   left: 50%;
+
+  display: block;
+  width: 102px;
+  height: 85px;
+
   transform: translateX(-50%);
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    width: 153px;
-
     top: 0;
     left: 50%;
+
     transform: translateX(-50%);
   }
 
   @media (min-width: $desktop-width) {
-    width: 244px;
-    height: 97px;
-
-    background-image: url("../img/logotype-blue.svg");
-    background-repeat: no-repeat;
-    background-position: top center;
+    width: 187px;
+    height: 96px;
   }
+}
+
+.header__logo img {
+  width: 100%;
 }

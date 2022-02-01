@@ -12,7 +12,11 @@
   <header class="header">
     <div class="header__wrapper">
       <a class="header__logo" href="index.html">
-        <img src="img/logotype-mobile.svg" alt="Логотип Sedona" width="102" height="84">
+        <picture>
+          <source media="(min-width: 1200px)" srcset=" img/logotype-desktop.svg" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg" type="image/svg+xml">
+          <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Седона">
+        </picture>
       </a>
 
       <nav class="header__nav menu">
@@ -44,8 +48,8 @@
   </header>
 
   <main class="main">
-    <section class="sedona-welcome">
-      <div class="sedona-welcome__image-wrapper sedona-welcome__image-wrapper--page">
+    <section class="sedona-welcome sedona-welcome--page sedona-welcome--form">
+      <div class="sedona-welcome__image-wrapper">
         <img class="sedona-welcome__image" src="img/sedona-welcome.svg" alt="Седона" width="457" height="78">
       </div>
 
@@ -80,11 +84,11 @@
         </fieldset>
 
         <fieldset class="form__item-container form__item-container--contacts">
-          <h2 class="form__title">Контактная информация:</h2>
+          <h2 class="form__title"><span>Контактная информация:</span></h2>
           <ul class="form__list list-reset">
             <li class="form__content-wrapper">
               <label class="form__label" for="form__contact">
-                <span class="form__label--hidden">Контактный</span> телефон<sup>*</sup>:
+                <span class="form__label-hidden">Контактный</span> телефон<sup>*</sup>:
               </label>
               <div class="form__content-icon form__content-icon--tel">
                 <input class="form__input" type="text" id="form__contact" placeholder="Введите телефон">
@@ -111,8 +115,7 @@
           <ul class="form__list list-reset">
             <li class="form__content-wrapper">
               <label class="form__label-radio">
-                <input class="form__input-radio visually-hidden" type="radio" id="form__positive" name="impression"
-                  checked>
+                <input class="form__input-radio visually-hidden" type="radio" id="form__positive" name="impression" checked>
                 <span class="form__radio"></span>
                 <span class="form__label-text">Скорее положительное</span>
               </label>
@@ -137,12 +140,11 @@
         </fieldset>
 
         <fieldset class="form__item-container form__item-container--attraction">
-          <h2 class="form__title">Посещенные достопримечательности:</h2>
+          <h2 class="form__title"><span>Посещенные достопримечательности:</span></h2>
           <ul class="form__list list-reset">
             <li class="form__content-wrapper">
               <label class="form__label-checkbox">
-                <input class="form__input-checkbox visually-hidden" type="checkbox" id="form__bridge"
-                  name="attraction-bridge" checked>
+                <input class="form__input-checkbox visually-hidden" type="checkbox" id="form__bridge" name="attraction-bridge" checked>
                 <span class="form__checkbox"></span>
                 <span class="form__label-text">Мост Дьявола</span>
               </label>
@@ -150,8 +152,7 @@
 
             <li class="form__content-wrapper">
               <label class="form__label-checkbox">
-                <input class="form__input-checkbox visually-hidden" type="checkbox" id="form__mountain"
-                  name="attraction-mountain" checked>
+                <input class="form__input-checkbox visually-hidden" type="checkbox" id="form__mountain" name="attraction-mountain" checked>
                 <span class="form__checkbox"></span>
                 <span class="form__label-text">Гора-Колокол</span>
               </label>
@@ -159,8 +160,7 @@
 
             <li class="form__content-wrapper">
               <label class="form__label-checkbox">
-                <input class="form__input-checkbox visually-hidden" type="checkbox" id="form__park"
-                  name="attraction-park" checked>
+                <input class="form__input-checkbox visually-hidden" type="checkbox" id="form__park" name="attraction-park" checked>
                 <span class="form__checkbox"></span>
                 <span class="form__label-text">Слайд-парк</span>
               </label>
@@ -168,8 +168,7 @@
 
             <li class="form__content-wrapper">
               <label class="form__label-checkbox">
-                <input class="form__input-checkbox visually-hidden" type="checkbox" id="form__rocks"
-                  name="attraction-rocks">
+                <input class="form__input-checkbox visually-hidden" type="checkbox" id="form__rocks" name="attraction-rocks">
                 <span class="form__checkbox"></span>
                 <span class="form__label-text">Красные скалы</span>
               </label>
@@ -179,13 +178,13 @@
 
         <fieldset class="form__item-container form__item-container--detail">
           <h2 class="form__title">Опишите свои эмоции:</h2>
-          <textarea class="form__input-detail" name="message"
-            placeholder="Опишите подробно все свои восторги"></textarea>
+          <textarea class="form__input-detail" name="message" placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
 
         <fieldset class="form__item-container form__item-container--submit">
-          <p class="form__text form__text--hidden"><sup>*</sup> - обязательные поля</p>
+
           <button class="form__submit button" type="submit">Отправить отзыв</button>
+          <p class="form__text form__text--hidden"><sup>*</sup> - обязательные поля</p>
         </fieldset>
       </form>
     </section>

@@ -1,20 +1,23 @@
 .menu {
   position: absolute;
   z-index: 10;
+
   width: 100%;
 
   @media (min-width: $tablet-width) {
     position: relative;
-    display: flex;
+
+    display: grid;
     justify-content: center;
 
-    height: 56px;
-
-    padding-left: -153px;
+    gap: 10px 102px;
+    grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: -239px;
+    padding: 0 46px;
+
+    gap: 10px 187px;
   }
 }
 
@@ -30,8 +33,8 @@
   width: 63px;
   height: 56px;
 
-  border: none;
   background-color: inherit;
+  border: none;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
@@ -39,20 +42,47 @@
   }
 }
 
-.no-js .menu__toggle {
-  display: none;
-}
-
 .menu__toggle::before {
   content: "";
   position: absolute;
   top: 17px;
   right: 20px;
+
   width: 23px;
   height: 4px;
 
   background-color: $blue;
   box-shadow: 0 9px 0 0 $blue, 0 17px 0 0 $blue;
+}
+
+.menu__toggle:hover::before,
+.menu__toggle:hover::after {
+  opacity: 0.6;
+}
+
+.menu__toggle:active::before,
+.menu__toggle:active::after {
+  opacity: 0.3;
+}
+
+.no-js .menu__toggle {
+  display: none;
+}
+
+.menu__list {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    justify-content: start;
+
+    gap: 10px;
+    grid-template-columns: 145px 145px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 95px;
+  }
 }
 
 .menu--opened .menu__list {
@@ -65,14 +95,16 @@
   position: absolute;
   top: 26px;
   right: 18px;
+
   width: 27px;
   height: 4px;
+
   background-color: #ffffff;
 }
 
 .menu--opened .menu__toggle::before {
-  transform: rotate(45deg);
   box-shadow: none;
+  transform: rotate(45deg);
 }
 
 .menu--opened .menu__toggle::after {
@@ -93,52 +125,47 @@
   display: block;
 }
 
-.menu__list {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-
-    margin: 0 auto;
-  }
-}
-
 .menu__list--other {
   @media (min-width: $tablet-width) {
-    margin-left: 153px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 244px;
+    justify-content: end;
   }
 }
 
 .menu__item {
+  padding: 10px 0 6px;
+
   text-align: center;
 
-  padding: 5px 0 10px;
-
   background-color: $blue;
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: center;
-    width: 153px;
-    height: 56px;
+    padding: 16px 0;
 
-    padding-top: 16px;
-
-    background-color: #ffffff;
-
-    &--current a {
-      color: #766357;
-    }
+    background: none;
+    box-shadow: none;
   }
 
   @media (min-width: $desktop-width) {
-    width: 239px;
+    padding-bottom: 14px;
   }
+
+  &--current a {
+    @media (min-width: $tablet-width) {
+      color: #766357;
+    }
+  }
+}
+
+.menu__item:hover {
+  color: $blue;
+  background-color: #669ec0;
+}
+
+.menu__item:active {
+  color: #000000;
+  opacity: 0.3;
+  background-color: #5496bd;
 }
 
 .menu__link {
