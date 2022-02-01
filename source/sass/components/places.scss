@@ -11,6 +11,7 @@
 .places__list {
   @media (min-width: $tablet-width) {
     display: grid;
+
     grid-template-columns: 1fr 1fr;
   }
 
@@ -20,17 +21,20 @@
 }
 
 .places__item-container {
-  display: block;
   position: relative;
+
+  display: block;
   padding: 22px 20px 15px;
 
-  @media (min-width: $tablet-width) {
-    display: block;
-    min-width: 324px;
-    min-height: 267px;
-    float: left;
+  border-bottom: 1px solid #e5e5e5;
 
+  @media (min-width: $tablet-width) {
     padding: 0;
+    // display: block;
+    // float: left;
+    // min-width: 324px;
+    // min-height: 267px;
+    // padding: 0;
   }
 }
 
@@ -45,30 +49,39 @@
 }
 
 .places__description {
-  bottom: 0;
-  left: 0;
-  right: 0;
+  text-align: left;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-
-    padding: 10px 20px;
+    align-items: center;
+    padding: 5px 20px 9px;
 
     background-color: $grey-form;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-style: normal;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    padding-right: 22px;
+    padding-bottom: 12px;
+
     font-weight: bold;
     font-size: 14px;
     line-height: 24px;
-
+    // font-family: "PT Sans", "Arial", sans-serif;
     color: #ffffff;
+
     background: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.places__item-container:first-child .places__description {
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
   }
 }
 
@@ -78,18 +91,32 @@
 }
 
 .places__title-container {
-  padding: 12px 0 5px;
+  padding: 10px 0 5px;
+
+  @media (min-width: $tablet-width) {
+    width: 295px;
+  }
 }
 
 .places__title {
-  font-size: 18px;
-
   margin: 0;
+
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.places__text {
+  margin: 0;
+
+  text-transform: initial;
 }
 
 .places__like-count {
   min-height: 21px;
-  padding: 10px 0 3px 25px;
+  margin-left: 0;
+  padding: 10px 0 3px 38px;
+
+  font-family: "PT Sans", "Arial", sans-serif;
 
   background-color: transparent;
   background-image: url("../img/like-icon.svg");
@@ -98,12 +125,17 @@
   background-size: 23px 21px;
   border: none;
 
+  @media (min-width: $tablet-width) {
+    padding-left: 33px;
+  }
+
   @media (min-width: $desktop-width) {
+    color: #ffffff;
+
     background-color: transparent;
     background-image: url("../img/like-icon-white.svg");
     background-repeat: no-repeat;
     background-position: 0 center;
-    color: #ffffff;
   }
 }
 
@@ -114,6 +146,5 @@
 .places__image-wrapper img {
   display: block;
   width: 100%;
-
   margin: 0;
 }

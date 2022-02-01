@@ -12,7 +12,11 @@
   <header class="header">
     <div class="header__wrapper">
       <a class="header__logo">
-        <img src="img/logotype-mobile.svg" alt="Логотип Sedona" width="102" height="84">
+        <picture>
+          <source media="(min-width: 1200px)" srcset=" img/logotype-desktop.svg" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg" type="image/svg+xml">
+          <img src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип Седона">
+        </picture>
       </a>
 
       <nav class="header__nav menu">
@@ -47,10 +51,7 @@
     <section class="sedona-welcome">
       <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
       <div class="sedona-welcome__image-wrapper">
-        <div class="sedona-welcome__vectors">
-          <img class="sedona-welcome__image" src="img/text-index.svg" alt="Добро пожаловать в Седону" width="282"
-            height="214">
-        </div>
+        <img class="sedona-welcome__image" src="img/text-index.svg" alt="Добро пожаловать в Седону" width="282" height="214">
       </div>
 
       <div class="sedona-welcome__content">
@@ -62,17 +63,24 @@
     <section class="causes">
       <h2 class="visually-hidden">Причины остаться в Седоне</h2>
       <ul class="causes__list list-reset">
-        <li class="causes__item-container">
+        <li class="causes__item-container causes__item-container--deployed">
           <div class="causes__item causes__item--blue">
             <div class="causes__content-wrapper">
               <h2 class="causes__title">Настоящий городок</h2>
 
-              <p class="causes__text">- №1 -</p>
+              <p class="causes__text">— №1 —</p>
               <p class="causes__text">Седона не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
 
             <div class="causes__img-container">
-              <img src="img/photo-city-desktop.jpg" alt="Фото города" width="800" height="256">
+              <picture>
+                <source type="image/jpg" media="(min-width: 1200px)" srcset="img/photo-city@1x-desktop.jpg, img/photo-city@2x-desktop.jpg 2x">
+                <source type="image/jpg" media="(min-width: 768px)" srcset="img/photo-city@1x-tablet.jpg, img/photo-city@2x-tablet.jpg 2x">
+                <source type="image/jpg" srcset="img/photo-city@1x-mobile.jpg, img/photo-city@2x-mobile.jpg 2x">
+                <source media="(min-width: 1200px)" srcset="img/photo-city@1x-desktop.jpg, img/photo-city@2x-desktop.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-city@1x-tablet.jpg, img/photo-city@2x-tablet.jpg 2x">
+                <img src="img/photo-city@1x-mobile.jpg" srcset="img/photo-city@2x-mobile.jpg 2x" alt="Настоящий городок" width="320" height="260">
+              </picture>
             </div>
           </div>
 
@@ -84,84 +92,86 @@
               </div>
             </li>
 
-            <li class="causes__item-container">
+            <li class="causes__item-container causes__item-container--souvenirs">
               <div class="causes__content-wrapper causes__content-wrapper--souvenirs">
                 <h2 class="causes__title">Сувениры</h2>
                 <p class="causes__text">Не только китайского, но и местного производства!</p>
               </div>
             </li>
 
-            <li class="causes__item-container">
+            <li class="causes__item-container causes__item-container--food">
               <div class="causes__content-wrapper causes__content-wrapper--food">
                 <h2 class="causes__title">Еда</h2>
-                <p class="causes__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <p class="causes__text">Всегда заказывайте фирменный бургер, вы&nbsp;не разочаруетесь!</p>
               </div>
             </li>
           </ul>
         </li>
 
-        <li class="causes__item-container">
+        <li class="causes__item-container causes__item-container--deployed">
           <div class="causes__item causes__item--second causes__item--blue">
             <div class="causes__content-wrapper">
-              <h2 class="causes__title">Так есть мост дьявола</h2>
+              <h2 class="causes__title">Там есть мост дьявола</h2>
 
-              <p class="causes__text">- №2 -</p>
+              <p class="causes__text">— №2 —</p>
               <p class="causes__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
 
             <div class="causes__img-container">
-              <img src="img/photo-bridge-desktop.jpg" alt="Фото моста" width="800" height="256">
+              <picture>
+                <source type="image/jpg" media="(min-width: 1200px)" srcset="img/photo-bridge@1x-desktop.jpg, img/photo-bridge@2x-desktop.jpg 2x">
+                <source type="image/jpg" media="(min-width: 768px)" srcset="img/photo-bridge@1x-tablet.jpg, img/photo-bridge@2x-tablet.jpg 2x">
+                <source type="image/jpg" srcset="img/photo-bridge@1x-mobile.jpg, img/photo-bridge@2x-mobile.jpg 2x">
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge@1x-desktop.jpg, img/photo-bridge@2x-desktop.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge@1x-tablet.jpg, img/photo-bridge@2x-tablet.jpg 2x">
+                <img src="img/photo-bridge@1x-mobile.jpg" srcset="img/photo-bridge@2x-mobile.jpg 2x" alt="мост Дьявола" width="320" height="260">
+              </picture>
+            </div>
+          </div>
+        </li>
+        <li class="causes__item-container">
+          <div class="causes__item causes__item--grey causes__item--line">
+            <div class="causes__content-wrapper">
+              <h2 class="causes__title">Небольшая площадь</h2>
+              <p class="causes__text">— №3 —</p>
+              <p class="causes__text">Все интересные места находятся очень близко</p>
             </div>
           </div>
         </li>
 
-        <ul class="causes__list-more list-reset">
-          <li class="causes__item-container">
-            <div class="causes__item causes__item--grey causes__item--line">
-              <div class="causes__content-wrapper">
-                <h2 class="causes__title">Небольшая площадь</h2>
-                <p class="causes__text">- №3 -</p>
-                <p class="causes__text">Все интересные места находятся очень близко</p>
-              </div>
+        <li class="causes__item-container">
+          <div class="causes__item causes__item--grey causes__item--line">
+            <div class="causes__content-wrapper">
+              <h2 class="causes__title">Красивая дорога</h2>
+              <p class="causes__text">— №4 —</p>
+              <p class="causes__text">Ехать в Седону из Лас&#8209;Вегаса совсен не&nbsp;скучно!</p>
             </div>
-          </li>
+          </div>
+        </li>
 
-          <li class="causes__item-container">
-            <div class="causes__item causes__item--grey causes__item--line">
-              <div class="causes__content-wrapper">
-                <h2 class="causes__title">Красивая дорога</h2>
-                <p class="causes__text">- №4 -</p>
-                <p class="causes__text">Ехать в Седону из Лас-Вегаса совсен не скучно!</p>
-              </div>
+        <li class="causes__item-container">
+          <div class="causes__item causes__item--grey">
+            <div class="causes__content-wrapper">
+              <h2 class="causes__title">Мало туристов</h2>
+              <p class="causes__text">— №5 —</p>
+              <p class="causes__text">Большинство едет в гранд каньон и толпится там</p>
             </div>
-          </li>
-
-          <li class="causes__item-container">
-            <div class="causes__item causes__item--grey">
-              <div class="causes__content-wrapper">
-                <h2 class="causes__title">Мало туристов</h2>
-                <p class="causes__text">- №5 -</p>
-                <p class="causes__text">Большенство едет в гранд каньон и толпится там</p>
-              </div>
-            </div>
-          </li>
-        </ul>
+          </div>
+        </li>
       </ul>
     </section>
 
     <section class="search">
-      <div class="search__content-wrapper">
-        <h2 class="search__title">Заинтересовались?</h2>
-        <p class="search__text">Укажите предлогаемые даты поездки, и мы покажем вам лучшие предложения гостинец в Седоне
-        </p>
-        <a class="search__button button" href="#">Найти гостиницу</a>
-      </div>
+      <h2 class="search__title">Заинтересовались?</h2>
+      <p class="search__text">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостинец в Седоне
+      </p>
+      <a class="search__button button" href="#">Найти гостиницу</a>
     </section>
 
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13565752865!2d-111.83015805709337!3d34.854443815618865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1638873586192!5m2!1sru!2sru" width="100%" height="350"></iframe>
+      <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+      </iframe>
     </section>
   </main>
 
