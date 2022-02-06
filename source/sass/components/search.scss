@@ -1,5 +1,5 @@
 .search {
-  padding: 16px 20px 49px;
+  padding: 18px 20px 49px;
 
   @media (min-width: $tablet-width) {
     justify-content: center;
@@ -39,8 +39,9 @@
 }
 
 .search__text {
+  margin-top: 20px;
   margin-bottom: 29px;
-
+  color: $text-color;
   line-height: 24px;
 
   @media (min-width: $tablet-width) {

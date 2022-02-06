@@ -6,7 +6,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     align-items: baseline;
-    padding: 35px 60px 30px;
+    padding: 36px 60px 30px;
 
     gap: 10px 110px;
     grid-template-columns: repeat(3, auto);
@@ -18,7 +18,8 @@
 }
 
 .footer__hashtag {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
 
   font-weight: 700;
   font-size: 21px;

@@ -8,8 +8,7 @@
   background-size: cover;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background: url("../img/intro-triangle.svg"),
-      url("../img/back-mobile@2.jpg");
+    background: url("../img/intro-triangle.svg"), url("../img/back-mobile@2.jpg");
     background-repeat: no-repeat, no-repeat;
     background-position: center bottom, center;
     background-size: cover;
@@ -17,7 +16,7 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    padding-top: 75px;
+    padding-top: 77px;
     padding-bottom: 91px;
 
     background: url("../img/intro-triangle.svg"), url("../img/back-tablet.jpg");
@@ -26,15 +25,14 @@
     background-size: 156%, cover;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/intro-triangle.svg"),
-        url("../img/back-tablet@2.jpg");
+      background-image: url("../img/intro-triangle.svg"), url("../img/back-tablet@2.jpg");
       background-position: center bottom, center;
       background-size: 156%, cover;
     }
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 93px;
+    padding-bottom: 92px;
 
     background: url("../img/intro-triangle.svg"), url("../img/back-desktop.jpg");
     background-repeat: no-repeat, no-repeat;
@@ -42,8 +40,7 @@
     background-size: 100%, cover;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../img/intro-triangle.svg"),
-        url("../img/back-desktop@2.jpg");
+      background-image: url("../img/intro-triangle.svg"), url("../img/back-desktop@2.jpg");
       background-position: center bottom, center;
       background-size: 100%, cover;
     }
@@ -63,28 +60,43 @@
 .sedona-welcome--page .sedona-welcome__image-wrapper {
   padding: 52px 45px 67px;
 
+  background: url("../img/intro-triangle.svg"), url("../img/back-desktop-page.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom;
+  background-size: cover;
+
   @media (min-width: $tablet-width) {
-    padding: 93px 154px 117px;
+    padding: 94px 156px 117px;
+
+    background: url("../img/intro-triangle.svg"), url("../img/back-tablet.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom;
+    background-size: cover;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 102px 154px 120px;
+    padding: 102px 180px 120px;
+
+    background: url("../img/intro-triangle.svg"), url("../img/back-desktop.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom;
+    background-size: cover;
   }
 }
 
 .sedona-welcome--page .sedona-welcome__content {
-  padding: 14px 21px 13px;
+  padding: 14px 21px 25px;
 
   border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: $tablet-width) {
-    padding: 38px 48px 64px;
+    padding: 47px 48px 75px;
 
     border: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 77px 48px 65px;
+    padding: 82px 48px 78px;
   }
 
   &::after {
@@ -106,19 +118,20 @@
 }
 
 .sedona-welcome__content {
+  min-width: 285px;
+  min-height: 162px;
   position: relative;
 
-  padding: 14px 25px 20px;
+  padding: 14px 30px 20px;
 
   @media (min-width: $tablet-width) {
     width: 540px;
     margin: 0 auto;
-    padding-top: 23px;
-    padding-bottom: 41px;
+    padding: 27px 0 41px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 35px;
+    padding-top: 37px;
     padding-bottom: 29px;
   }
 }
@@ -143,10 +156,16 @@
 }
 
 .sedona-welcome__title {
-  margin-bottom: 29px;
+  margin-top: 18px;
+  margin-bottom: 30px;
 
-  font-weight: 700;
+  align-items: center;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
   font-size: 18px;
+  line-height: 26px;
+  mix-blend-mode: normal;
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
@@ -163,6 +182,8 @@
 
 .sedona-welcome__text {
   margin-top: 0;
+  margin-bottom: 0;
+  color: $text-color;
 }
 
 .sedona-welcome--form .sedona-welcome__text {

@@ -160,12 +160,22 @@
 .menu__item:hover {
   color: $blue;
   background-color: #669ec0;
+
+  @media (min-width: $desktop-width) {
+    background-color: #ffffff;
+    color: #81b3d2;
+  }
 }
 
 .menu__item:active {
   color: #000000;
   opacity: 0.3;
   background-color: #5496bd;
+
+  @media (min-width: $desktop-width) {
+    background-color: #ffffff;
+    color: #b3b3b3;
+  }
 }
 
 .menu__link {

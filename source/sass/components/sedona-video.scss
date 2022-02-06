@@ -1,5 +1,5 @@
 .sedona-video {
-  padding-bottom: 38px;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     padding: 0 60px 40px;
@@ -27,6 +27,8 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
+
+  color: $text-color;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
