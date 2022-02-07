@@ -24,11 +24,9 @@
   margin-bottom: 25px;
 
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-
-  color: $text-color;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
@@ -39,6 +37,8 @@
 
 .sedona-video__text {
   margin-bottom: 0;
+  color: $text-color;
+  font-weight: 400;
 }
 
 .sedona-video__video-wrapper {
@@ -48,10 +48,6 @@
     display: flex;
     justify-content: center;
   }
-
-  // @media (min-width: $desktop-width) {
-  //   padding: 66px 199px 85px;
-  // }
 }
 
 .sedona-video__video-wrapper img {

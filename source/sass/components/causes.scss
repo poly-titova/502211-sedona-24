@@ -41,6 +41,10 @@
   }
 }
 
+.causes__item--blue .causes__text {
+  color: #ffffff;
+}
+
 .causes__item--second .causes__content-wrapper {
   padding: 43px 36px 18px;
 
@@ -96,6 +100,7 @@
   margin-bottom: 17px;
 
   line-height: 21px;
+  color: $text-color;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 23px;

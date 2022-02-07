@@ -22,7 +22,7 @@
 
 .button:active {
   background-color: #5496bd;
-  opacity: 0.3;
+  color: fade(#ffffff, 30%);
 }
 
 .button:disabled {

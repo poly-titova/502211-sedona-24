@@ -42,3 +42,11 @@
   display: inline-block;
   margin-left: 12px;
 }
+
+.footer__developed-link:hover {
+  color: $blue;
+}
+
+.footer__developed-link:active {
+  color: fade(#000000, 30%);
+}
